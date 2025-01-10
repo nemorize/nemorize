@@ -3,6 +3,7 @@ layout: post
 date: git Created
 
 title: 내가 (거의) 모든 곳에 PHP를 사용하는 이유
+summary: 내가 왜 PHP의 수많은 단점을 감수하고서 PHP를 사용하는지 담담하게 풀어보았다. 
 tags: [ PHP ]
 ---
 
