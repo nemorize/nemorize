@@ -63,6 +63,6 @@ pagination:
 
 #### 프로그래밍
 > PHP와 TypeScript를 제일 많이 사용합니다.
-> <a href="/blog/2025-01-01/why-i-use-php-almost-everywhere">내가 (거의) 모든 곳에 PHP를 사용하는 이유</a>를 읽어보세요.<br />
+> <a href="/blog/202501/why-i-use-php-almost-everywhere">내가 (거의) 모든 곳에 PHP를 사용하는 이유</a>를 읽어보세요.<br />
 > 공백만으로 블럭을 구분하는 Python을 좋아하지 않습니다.<br />
 > Jetbrains 제품들을 10년 넘게 사용하고 있습니다. 특히 PHPStorm은 이제 인생의 반려자와 같은 존재가 되었습니다.
