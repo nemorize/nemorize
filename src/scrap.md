@@ -1,6 +1,4 @@
 ---
-eleventyExcludeFromCollections: true
-
 title: 스크랩
 ---
 

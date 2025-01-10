@@ -1,6 +1,4 @@
 ---
-eleventyExcludeFromCollections: true
-
 title: 나
 pagination:
     data: collections.post

@@ -1,6 +1,4 @@
 ---
-eleventyExcludeFromCollections: true
-
 title: 게시글
 ---
 
