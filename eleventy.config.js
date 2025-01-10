@@ -8,6 +8,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyImageTransformPlugin)
 
   eleventyConfig.addPassthroughCopy('src/assets')
+  eleventyConfig.addPassthroughCopy('src/opengraph.png')
   eleventyConfig.addPassthroughCopy('src/**/opengraph.png')
 
   eleventyConfig.addFilter('limit', (array, limit) => array.slice(0, limit))
