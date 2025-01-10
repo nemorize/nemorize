@@ -12,8 +12,12 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/**/opengraph.png')
 
   eleventyConfig.addFilter('limit', (array, limit) => array.slice(0, limit))
+
   eleventyConfig.addFilter('date', (date) => DateTime.fromISO(date.toISOString())
     .setZone('Asia/Seoul').toFormat('yyyy년 LL월 dd일 HH시 mm분'))
   eleventyConfig.addFilter('yearMonth', (date) => DateTime.fromISO(date.toISOString())
     .setZone('Asia/Seoul').toFormat('yyyy년 LL월'))
+
+  eleventyConfig.addShortcode('buildDate', () => DateTime.now()
+    .setZone('Asia/Seoul').toFormat('yyyy년 LL월 dd일 HH시 mm분'))
 }
