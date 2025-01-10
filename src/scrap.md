@@ -1,7 +1,0 @@
----
-eleventyExcludeFromCollections: true
-
-title: 스크랩
----
-
-준비중입니다.
