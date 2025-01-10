@@ -17,7 +17,9 @@
     <meta name="twitter:description" content="{{ description }}" />
     <meta name="twitter:image" content="https://nemorize.me{{ page.url }}opengraph.png" />
 
-    <meta property="og:type" content="website" />
+    {% if page.url == '/' %}{% set ogType = 'website' %}
+    {% else %}{% set ogType = 'article' %}
+    <meta property="og:type" content="{{ ogType }}" />
     <meta property="og:site_name" content="nemorize.me" />
     <meta property="og:locale" content="ko_KR" />
     <meta property="og:url" content="https://nemorize.me{{ page.url }}" />
