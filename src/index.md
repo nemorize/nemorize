@@ -3,7 +3,7 @@ eleventyExcludeFromCollections: true
 
 title: 나
 pagination:
-    data: collections.all
+    data: collections.post
     size: 5
     alias: posts
     reverse: true

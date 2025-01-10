@@ -10,7 +10,7 @@
     {% else %}{% set description = '@nemorize (Ji Yong, Kim)' %}{% endif %}
 
     <meta name="description" content="{{ description }}" />
-    {% if tags %}<meta name="keywords" content="{{ tags | join(',') }}" />{% endif %}
+    {% if tags %}<meta name="keywords" content="{{ categories | join(',') }}" />{% endif %}
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="{{ title }} | nemorize.me" />

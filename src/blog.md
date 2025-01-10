@@ -7,7 +7,7 @@ title: 게시글
 # 게시글
 
 {% assign ym = "" %}
-{% for post in collections.all reversed %}
+{% for post in collections.post reversed %}
 {% assign postYearMonth = post.date | yearMonth %}
 {% if ym != postYearMonth %}
 {% assign ym = postYearMonth %}

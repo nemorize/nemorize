@@ -1,10 +1,11 @@
 ---
+tags: [ post ]
 layout: post
 date: git Created
 
 title: 내가 (거의) 모든 곳에 PHP를 사용하는 이유
 summary: 내가 왜 PHP의 수많은 단점을 감수하고서 PHP를 사용하는지 담담하게 풀어보았다. 
-tags: [ PHP ]
+categories: [ PHP ]
 ---
 
 나는 PHP를 오래 전부터(4.0) 지금까지 계속 사용해오고 있다. 1~3버전을 기억하던 선배님들은 하룻강아지로 보겠지만,
@@ -32,7 +33,7 @@ Google Cloud Function, AWS Lambda, Azure Functions, 좀 더 최근에는 Cloudfl
 서버리스 함수 플랫폼에서 PHP를 사용하려면 PHP 런타임이 포함된 컨테이너를 만들어 사용하거나, babel을 통해 JS로 변경해 사용해야 하는 등의 불편함을 감수해야 한다.
 
 <x-image-caption data-caption="Cloudflare Workers에서 PHP를 사용하기 위한 뻘짓 - https://github.com/cloudflare/php-worker-hello-world">
-    <img src="./images/why-i-use-php-almost-everywhere-cloudflare-workers-php.png" alt="" />
+    <img src="./cloudflare-workers-php.png" alt="" />
 </x-image-caption>
 
 ## 모놀리식과 마이크로 서비스
@@ -57,7 +58,7 @@ GET, POST를 전역변수로 노출시키거나, 밑도 끝도 없이 터져나�
 아직까지 PHP를 사용하는 사람들도 대책이 있다고 반론할지언정 완전히 부정하는 것은 불가능한, 아주 안타까운 문제다.
 
 <x-image-caption data-caption="아주 유명한 짤이다.">
-    <img src="./images/why-i-use-php-almost-everywhere-explode.png" alt="" />
+    <img src="./php-explode.png" alt="" />
 </x-image-caption>
 
 이미 유명해질대로 유명해져 PHP에 관심이 전혀 없는 개발자들도 봤을법한 `explode()` `implode()`는 PHP 개발자들의 발작 버튼이다.
@@ -84,7 +85,7 @@ PHP의 태생은 라스무스 러도프가 C로 작성하기 귀찮아서 그때
 지금까지 다들 알고 있는 PHP의 단점들만 나열했다. 이렇게 나열하고 보니 지금까지 PHP를 쓰고 있는 내가 참 미련해 보인다. 스캇 마니아라는 멸칭이 붙어도 반박하지 못할 것 같다.
 
 <x-image-caption data-caption="Portuguese Gravity on Unsplash - https://unsplash.com/@portuguesegravity">
-    <img src="./images/why-i-use-php-almost-everywhere-poop.jpg" alt="" />
+    <img src="./poop.jpg" alt="" />
 </x-image-caption>
 
 나는 개인적인 프로젝트부터 업무를 위한 프로젝트까지, 내가 기술 스택을 선택할 권한이 있는 프로젝트에서는 시기 불문 거의 모두 PHP를 사용했다.
@@ -142,7 +143,7 @@ DB를 깔끔하게 사용하기 위해 커넥션 풀 프록시를 도입할 필�
 "프로그래밍으로" 문제 풀기를 좋아하거나, 깔끔하고 멋있는 설계를 기반으로 기술적으로 대단한 프로그램을 작성하는 것을 좋아하는 것이 아니다. 오히려 싫어하는 편이다.
 
 <x-image-caption data-caption="나는 라스무스 러도프만큼 위대하지 않지만, 라스무스 러도프만큼 프로그래밍을 싫어한다.">
-    <img src="./images/why-i-use-php-almost-everywhere-rasmus-lerdorf.png" alt="" />
+    <img src="./rasmus-lerdorf.png" alt="" />
 </x-image-caption>
 
 나는 20살에 30만원짜리 PC만을 가지고 1인 사업을 시작해 만족할만한 수익을 달성하기까지의 4년간 어떠한 인건비도 지출하지 않았다. 
@@ -182,5 +183,5 @@ PHP는 성능이 꽤 좋은 편이다. Opcache나 JIT을 지원하는 버전을 
 ~~그만큼 그들도 나를 스캇 매니아라고 부르는 것을 자제해 주었으면 한다. 차라리 코끼리박이가 더 힙스터스럽지 아니한가.~~
 
 <x-image-caption data-caption="빼애앢">
-    <img src="./images/why-i-use-php-almost-everywhere-penguin.png" alt="" />
+    <img src="./penguin.png" alt="" />
 </x-image-caption>
