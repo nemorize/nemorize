@@ -186,7 +186,7 @@ main x-image-slide picture img {
   padding-bottom: 24px;
 }
 
-#post #meta #tags {
+#post #meta #categories {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -196,7 +196,7 @@ main x-image-slide picture img {
   padding: 0;
 }
 
-#post #meta #tags li {
+#post #meta #categories li {
   display: flex;
   align-items: center;
   justify-content: center;
