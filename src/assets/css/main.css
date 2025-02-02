@@ -56,9 +56,15 @@ main time {
   font-size: 13px;
 }
 
-main ul {
+main ul,
+main ol{
   margin: 12px 0;
   padding: 0 0 0 20px;
+}
+
+main ul li,
+main ol li {
+  padding-left: 8px;
 }
 
 main blockquote {
