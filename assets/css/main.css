@@ -125,8 +125,13 @@ main x-image-caption picture,
 main x-image-caption img,
 main x-image-caption picture img {
   width: 100%;
-  max-width: 600px;
   height: auto;
+}
+
+main x-image-caption:not([data-no-max-width-limit]) picture,
+main x-image-caption:not([data-no-max-width-limit]) img,
+main x-image-caption:not([data-no-max-width-limit]) picture img {
+  max-width: 600px;
 }
 
 main x-image-caption:after {
