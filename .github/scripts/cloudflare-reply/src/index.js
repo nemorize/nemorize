@@ -90,8 +90,7 @@ export default {
 				return new Response('', {
 					status: 302,
 					headers: {
-						'location': `https://${env.BLOG_HOST}${path}`,
-						'set-cookie': `auth-token=${token}; HttpOnly; SameSite=Lax; Secure`
+						'location': `https://${env.BLOG_HOST}${path}#comment-form`,
 					}
 				})
 			} catch (e) {
@@ -202,15 +201,12 @@ export default {
 								}
 							})
 						}
-						return new Response(
-							`<script>location.replace('https://${env.BLOG_HOST}${path}#comment-form')</script>`,
-							{
-								status: 200,
-								headers: {
-									'content-type': 'text/html; charset=utf-8',
-								}
+						return new Response('', {
+							status: 302,
+							headers: {
+								'location': `https://${env.BLOG_HOST}${path}#comment-form`,
 							}
-						)
+						})
 					} catch (e) {
 						console.error(e)
 						return new Response(String(serverErrorHtml), {
