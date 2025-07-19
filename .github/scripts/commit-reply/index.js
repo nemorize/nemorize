@@ -34,9 +34,9 @@ function build (username, content) {
 const raw = process.env.json
 const inputs = JSON.parse(raw)
 
-let content = (await readFile(inputs.path + '/index.html')).toString()
+let content = (await readFile('.' + inputs.path + '/index.html')).toString()
 content = content.replace(
   insertAfter,
   insertAfter + build(inputs.username, inputs.content)
 )
-await writeFile(inputs.path + '/index.html', content)
+await writeFile('.' + inputs.path + '/index.html', content)
