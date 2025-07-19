@@ -1,4 +1,5 @@
-name: cloudflare-reply.yml
+name: Deploy Cloudflare Wrangler
+
 on:
   push:
 
