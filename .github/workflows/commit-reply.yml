@@ -46,9 +46,13 @@ jobs:
         run: node .github/scripts/commit-reply/index.js
 
       - name: Commit an update
+        env:
+          content: "${{ github.event.inputs.content }}"
         run: |
           git add ".${{ github.event.inputs.path }}/index.html"
           git config --global user.email "github-actions@github.com"
           git config --global user.name "commit-reply"
-          git commit -m "reply: ${{ github.event.inputs.username }} replied to ${{ github.event.inputs.path }}"
+          git commit -m "reply: ${{ github.event.inputs.username }} replied to ${{ github.event.inputs.path }}"\
+                     -m ""\
+                     -m "$content"
           git push
