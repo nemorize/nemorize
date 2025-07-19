@@ -172,6 +172,7 @@ export default {
 					fetch(`https://api.github.com/repos/${GITHUB_WORKFLOW_REPO}/actions/workflows/${GITHUB_WORKFLOW_ID}/dispatches`, {
 						method: 'POST',
 						headers: {
+							'user-agent': 'nemorize-reply-app',
 							'accept': 'application/vnd.github+json',
 							'authorization': `Bearer ${env.GITHUB_WORKFLOW_TOKEN}`,
 							'x-github-api-version': '2022-11-28'
