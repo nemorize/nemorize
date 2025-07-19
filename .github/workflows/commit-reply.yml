@@ -47,7 +47,7 @@ jobs:
 
       - name: Commit an update
         run: |
-          git add ${{ github.event.inputs.path }}
+          git add ".${{ github.event.inputs.path }}/index.html"
           git config --global user.email "github-actions@github.com"
           git config --global user.name "commit-reply"
           git commit -m "reply: ${{ github.event.inputs.username }} replied to ${{ github.event.inputs.path }}"
