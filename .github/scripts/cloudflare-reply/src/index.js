@@ -56,8 +56,7 @@ export default {
 						code,
 					})
 				})
-				const output0 = await response0.json()
-				if (output0.error) {
+				if (!response0.ok) {
 					return new Response(String(authFailedHtml), {
 						status: 400,
 						headers: {
@@ -66,6 +65,7 @@ export default {
 					})
 				}
 
+				const output0 = await response0.json()
 				const response1 = await fetch('https://api.github.com/user', {
 					method: 'GET',
 					headers: {
@@ -73,8 +73,7 @@ export default {
 						'authorization': `Bearer ${output0.access_token}`,
 					},
 				})
-				const output1 = await response1.json()
-				if (output1.error) {
+				if (!response1.ok) {
 					return new Response(String(authFailedHtml), {
 						status: 400,
 						headers: {
@@ -83,6 +82,7 @@ export default {
 					})
 				}
 
+				const output1 = await response1.json()
 				const token = await jwt.sign({
 					iss: env.BLOG_HOST,
 					sub: output1.login,
@@ -194,9 +194,7 @@ export default {
 								},
 							}),
 						})
-						const output = await response.json()
-						if (output.error) {
-							console.error(output)
+						if (!response.ok) {
 							return new Response(String(serverErrorHtml), {
 								status: 500,
 								headers: {
