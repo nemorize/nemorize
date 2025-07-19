@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>댓글 작성 폼</title>
+
+  <link rel="stylesheet" href="https://nemorize.me/assets/css/style.css" />
+  <link rel="stylesheet" href="https://nemorize.me/assets/css/comment-form.css" />
+</head>
+<body>
+<div class="comment-form">
+  <h2>댓글</h2>
+  <label class="comment-form__content">
+    <textarea name="content" placeholder="먼저 로그인 해 주세요." required disabled></textarea>
+  </label>
+  <div class="comment-form__footer">
+    <a class="comment-form__footer-author" href="/auth?path={{ path }}" target="_parent">
+      <div class="comment-form__footer-author-img"></div>
+      <div class="comment-form__footer-author-text">
+        <i>Unauthorized</i>
+        <span>GitHub 계정으로 로그인하기</span>
+      </div>
+    </a>
+    <button type="button" disabled>인증필요</button>
+  </div>
+</div>
+</body>
+</html>

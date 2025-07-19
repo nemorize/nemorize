@@ -1,0 +1,150 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Pretendard Variable";
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/pretendard-variable.woff2") format("woff2-variations");
+}
+@font-face {
+  font-family: "D2Coding";
+  font-style: normal;
+  font-weight: 400;
+  src: local("※"), local("D2Coding"), url("../fonts/d2coding.woff2") format("woff2");
+}
+:root {
+  --primary: #154AD4;
+  --background: #FAFAF8;
+  --border: #EEEEEE;
+  --high: #151520;
+  --mid: #444448;
+  --low: #77777C;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #FFFFFF;
+    --background: #18181A;
+    --border: #2A2A2A;
+    --high: #FFFFFF;
+    --mid: #E5E5E5;
+    --low: #AAAAAA;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--mid);
+  font-family: "Pretendard Variable", sans-serif;
+  font-size: 14px;
+  font-weight: 420;
+  line-height: 1.75;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.header {
+  width: 100%;
+  height: 48px;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 750;
+  text-decoration: none;
+}
+.header__brand:before {
+  content: "";
+  display: block;
+  width: 6px;
+  aspect-ratio: 1;
+  background-color: var(--primary);
+}
+@media (max-width: 360px) {
+  .header__brand {
+    font-size: 0;
+  }
+  .header__brand:after {
+    content: "네모";
+    font-size: 14px;
+  }
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header__nav-item {
+  color: var(--low);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.25s;
+}
+.header__nav-item:hover {
+  color: var(--high);
+}
+.header__nav-item--active {
+  color: var(--high);
+  font-weight: 600;
+}
+
+.footer {
+  width: 100%;
+  height: 48px;
+}
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.footer__copyright {
+  color: var(--mid);
+  font-size: 12px;
+}
+@media (max-width: 360px) {
+  .footer__copyright {
+    font-size: 0;
+  }
+  .footer__copyright:before {
+    content: "© 2025 J.Y. Kim.";
+    font-size: 12px;
+  }
+}
+.footer__nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.footer__nav-item {
+  color: var(--low);
+  font-size: 11px;
+  text-decoration: none;
+}
+
+main {
+  padding: 24px 0;
+}
+
+/*# sourceMappingURL=style.css.map */

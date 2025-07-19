@@ -1,0 +1,72 @@
+@charset "UTF-8";
+.images__section {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+.images__section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0 none;
+}
+.images__section:first-child h3 {
+  margin: 0;
+}
+.images__section h3 {
+  margin: 20px 0 0;
+  color: var(--high);
+  font-size: 16px;
+  font-weight: 600;
+}
+.images__section-list {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+.images__section-list-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+.images__section a {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.images__section a img {
+  width: 100%;
+  border-radius: 4px;
+  transition: opacity 0.25s, filter 0.25s;
+}
+.images__section a img:hover {
+  opacity: 1 !important;
+  filter: unset !important;
+}
+.images__section a span {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  height: 18px;
+  padding: 0 5px;
+  background-color: var(--mid);
+  border-radius: 2px;
+  color: var(--background);
+  font-size: 10px;
+  font-weight: 600;
+}
+.images__section a span:before {
+  content: "✕";
+  font-size: 9px;
+  font-weight: 700;
+}
+.images:has(img:hover) img {
+  opacity: 0.75;
+  filter: grayscale(1);
+}
+
+/*# sourceMappingURL=images.css.map */

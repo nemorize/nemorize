@@ -1,20 +1,6 @@
-# Yarn
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
-.pnp.*
 node_modules
+package-lock.json
 
-# IDE
 .idea
 
-# Cache
-.cache
 .DS_Store
-_site
-
-# Draft
-src/blog/draft

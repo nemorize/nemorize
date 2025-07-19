@@ -1,0 +1,24 @@
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  h1 {
+    margin: 0;
+
+    color: var(--high);
+    font-size: 24px;
+    font-weight: 850;
+  }
+
+  p {
+    margin: 0;
+
+    color: var(--low);
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

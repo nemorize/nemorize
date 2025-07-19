@@ -1,0 +1,54 @@
+name: Commit Reply
+
+concurrency:
+  group: ${{ github.workflow }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      path:
+        type: string
+        required: true
+        description: Path to insert the reply
+      username:
+        type: string
+        required: true
+        description: GitHub username of the reply
+      content:
+        type: string
+        required: true
+        description: Content of the reply
+
+permissions:
+  contents: read
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository }}
+          token: ${{ secrets.X_GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: cd .github/scripts/commit-reply && npm install && cd ../../
+
+      - name: Update a file
+        env:
+          json: ${{ toJSON(github.event.inputs) }}
+        run: node .github/scripts/commit-reply/index.js
+
+      - name: Commit an update
+        run: |
+          git add ${{ github.event.inputs.path }}
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "commit-reply"
+          git commit -m "reply: ${{ github.event.inputs.username }} replied to ${{ github.event.inputs.path }}"
+          git push

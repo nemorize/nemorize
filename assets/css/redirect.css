@@ -1,0 +1,39 @@
+.redirect .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 24px 0;
+}
+.redirect__loader {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 8px;
+  background-color: var(--border);
+  border-radius: 100px;
+}
+.redirect__loader:before {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 100%;
+  background-color: var(--low);
+  border-radius: 100px;
+  animation: redirect 0.75s ease-in-out infinite alternate;
+}
+@keyframes redirect {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(80px - 100%));
+  }
+}
+.redirect span {
+  color: var(--mid);
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=redirect.css.map */

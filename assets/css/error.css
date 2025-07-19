@@ -1,0 +1,21 @@
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.error h1 {
+  margin: 0;
+  color: var(--high);
+  font-size: 24px;
+  font-weight: 850;
+}
+.error p {
+  margin: 0;
+  color: var(--low);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=error.css.map */

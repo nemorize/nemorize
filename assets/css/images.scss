@@ -1,0 +1,92 @@
+.images {
+  &__section {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: 0 none;
+    }
+
+    &:first-child {
+      h3 {
+        margin: 0;
+      }
+    }
+
+    h3 {
+      margin: 20px 0 0;
+
+      color: var(--high);
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    &-list {
+      display: flex;
+      gap: 12px;
+
+      margin-top: 12px;
+
+      &-column {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        flex: 1;
+      }
+    }
+
+    a {
+      position: relative;
+      display: flex;
+      width: 100%;
+
+      img {
+        width: 100%;
+        border-radius: 4px;
+
+        transition: opacity 0.25s, filter 0.25s;
+
+        &:hover {
+          opacity: 1 !important;
+          filter: unset !important;
+        }
+      }
+
+      span {
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+
+        height: 18px;
+        padding: 0 5px;
+
+        background-color: var(--mid);
+        border-radius: 2px;
+
+        color: var(--background);
+        font-size: 10px;
+        font-weight: 600;
+
+        &:before {
+          content: '✕';
+          font-size: 9px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  &:has(img:hover) img {
+    opacity: 0.75;
+    filter: grayscale(1);
+  }
+}

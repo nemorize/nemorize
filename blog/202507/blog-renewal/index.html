@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>블로그를 뭔가 이상하게 리뉴얼했다 | nemorize.me</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="nemorize.me" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:title" content="블로그를 뭔가 이상하게 리뉴얼했다 | nemorize.me" />
+  <meta property="og:description" content="@nemorize (Ji Yong, Kim)" />
+
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/post.css" />
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <a class="header__brand" href="/" title="nemorize.me">
+      네모라이즈
+    </a>
+    <nav class="header__nav">
+      <a class="header__nav-item" href="/">
+        나
+      </a>
+      <a class="header__nav-item header__nav-item--active" href="/blog">
+        게시글
+      </a>
+      <a class="header__nav-item" href="/images">
+        사진첩
+      </a>
+      <a class="header__nav-item" href="/notes">
+        짧은글
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main class="post">
+  <div class="container">
+    <div class="post__header">
+      <div class="post__header-tags">
+        <span>프로그래밍</span>
+        <span>디자인</span>
+        <span>블로그</span>
+      </div>
+      <h1>블로그를 뭔가 이상하게 리뉴얼했다</h1>
+      <div class="post__header-meta">
+        <time>2025년 07월 19일 13시 24분</time>
+        <i>|</i>
+        <span>완독까지 약 15분</span>
+      </div>
+    </div>
+
+    <article class="post__body">
+      <p>
+        블로그를 뭔가 이상하게 리뉴얼했다. 코드베이스도 많이 손봤고, 디자인도 세세하게 손을 봤다. 무엇이 이상한걸까?
+      </p>
+      <p>
+        이번 리뉴얼 전 블로그는 11ty, nunjucks, liquidjs, css로 작성하여 SSG 컴파일되는 구조로 이루어져 있었다.
+        작성 당시에는 꽤 만족스러웠지만 게시글을 추가하고, 유지보수를 하다 보니 아쉬운 점이 생각보다 꽤 많더라.
+        이번 글에서는 11ty의 아쉬운 점을 간단하게 이야기하며, 이번 블로그 리뉴얼 방향을 소개해보려 한다.
+      </p>
+
+      <h2>디자인 요소</h2>
+      <p>
+        디자인 요소 섹션에서는 크게 이상한 것들을 다루지 않는다.
+        그냥 내 취향껏 그렸다는 이야기가 전부이므로, 이상한 리뉴얼의 정체를 알고싶다면 스크롤을 조금 내려 기술 요소 섹션으로 넘어가자.
+      </p>
+      <p>
+        난 학생때부터 오밀조밀한 디자인을 좋아했고 항상 그런 디자인 위주로 작업해 왔는데,
+        최근 요소 하나 하나가 큼지막하고, 널널한 여백을 애용하는 서양권 취향의 서비스들이 국내외를 불문하고 넘쳐나다보니 당시에는 잠깐 정체성을 잃었나보다.
+        이제서라도 오밀조밀하게 바꾸니 확실히 더 마음에 든다.
+      </p>
+
+      <h3>사이즈 및 공간 구분</h3>
+      <p>
+        일단 전반적으로 기존 디자인에 비해 사이즈를 컴팩트하게 잡았다. 글씨 크기를 적당히 작게 조정했고, 줄 높이도 조금 더 좁혔다.
+        컨테이너 사이즈도 몇십픽셀 더 줄였다. 화면 크기가 커지는만큼 컨테이너도 크게 잡는게 요즘 유행이지만, 내 취향껏 적당히 좁게 잡았다.
+      </p>
+      <p>
+        크게 눈에 띄지는 않지만 여백을 줄이고, 원래 그 여백으로 구분하던 공간들 사이에 선을 하나 그었다.
+        아래 스크린샷은 약간의 화질 저하가 있다보니 선이 눈에 띄지 않아 아쉽다. 원본을 확인하자.
+      </p>
+      <figure>
+        <img src="/blog/202507/blog-renewal/compact-size.png" alt="" style="max-width: unset" />
+        <figcaption>좌측이 기존 디자인, 우측이 새로운 디자인</figcaption>
+      </figure>
+
+      <h3>메인 페이지</h3>
+      <p>
+        윗 문단의 스크린샷에서도 확인할 수 있지만, 메인 페이지 디자인을 크게 바꿨다. 찍은지 십년도 더 지난 학생때의 사진을 최상단에 박아넣었고,
+        그 밑 하단 컨텐츠들도 힘을 쫙 뺐다. 특히 "내 정보" 섹션의 좌측 선들은 괜히 눈을 심란하게 만들어 없앴다.
+        대신 깔끔한 <code>ul</code> 태그를 사용해 약간의 구분감을 줬다.
+      </p>
+
+      <h3>기타 새로운 요소들</h3>
+      <p>
+        사진첩, 짧은글과 같이 새롭게 작업한 기능들이다. 이전 버전에선 존재하지 않은 기능이니 딱히 설명할 것은 없다. 그냥 내 취향껏 잘 그려 넣었다.
+      </p>
+
+      <h2>기술 요소</h2>
+      <p>
+        이번 리뉴얼의 이상한 요소는 전부 기술 요소에 있다.
+        나는 11ty를 사용하며 아쉬웠던 점을 보완하기 위해, 보편적인 관점에서 오히려 더 불편한 방향으로 작업했다.
+        어떤 점이 더 이상해졌고, 왜 그런 선택을 했는지 알아보자.
+      </p>
+
+      <h3>통짜 HTML 파일들</h3>
+      <p>
+        이번 리뉴얼은 SSG 라이브러리, 프레임워크 등을 사용하지 않았다.
+        그 말은 즉, 레이아웃 기능과 같은 생산성 향상에 도움이 되는 기능들을 전부 포기하고 중복되는 HTML 코드들을 반복 작성했다는 이야기가 된다.
+      </p>
+      <p>
+        11ty를 사용하며 제일 매력적으로 느꼈던 것은
+        "정적 웹사이트 작성에 사실상 필수인 기능들은 강력하게 지원하고, 그 이외 SPA 지원 등은 배제하여 가볍게 사용할 수 있도록 했다는 점"이다.
+        그럼에도 이번에는 11ty를 사용하지 않은 것은, 이는 SSG를 위해 11ty를 운용하는 것마저도 부담이 됐기 때문이다.
+      </p>
+      <p>
+        SSG 솔루션들은 내가 작성한 게시글을 미리보기 하기 위해서 개발 서버를 실행해야 하며, 게시글 작성 후에는 빌드 절차를 거쳐야 게시할 수 있다.
+        그 말은 곧 내가 게시글을 하나 작성할 때마다 터미널을 열고, 개발 서버를 실행하고, SSG 프레임워크가 원하는 코드를 맞춰 작성해야 하며,
+        그 이후 빌드 절차까지 거치는, 4단계에 달하는 준비 및 마무리 절차가 수반되어야 한다는 것이다.
+        안그래도 블로그 관리하기 귀찮은데 이렇게 복잡한(?) 절차를 거쳐야 게시글 하나를 작성할 수 있다니,
+        11ty를 계속 썼다면 이 글을 마지막으로 적어도 1년 동안은 새 게시글을 작성할 엄두도 못 냈을거다.
+      </p>
+      <p>
+        그에 비해 통짜 HTML 코드를 작성하면 이러한 부담이 확 줄어든다. 작성할 HTML 파일을 그냥 브라우저로 열어버리면 되니까.
+        공통 헤더, 푸터와 같은 코드들은 그냥 템플릿 파일 하나 만들어 매번 복사하는 것으로 해결했다.
+        <a href="/blog/post-template.html" target="_blank">여기</a>에서 템플릿 파일을 구경해 볼 수 있다.
+      </p>
+
+      <h3>JS 없는 페이지</h3>
+      <p>
+        JS 코드를 완전히 제거했다. 기존 블로그에서도 특별히 직접 작성한 JS 코드가 존재하지는 않지만,
+        Google Analytics, Cloudflare Scrape Shield, Giscus 같은 서드파티가 삽입하는 JS 코드가 일부 있었다.
+      </p>
+      <p>
+        GA와 CF는 딱히 제대로 활용하고 있지 않아 그냥 제거하는 것으로 합의봤지만, 문제는 Giscus의 댓글 기능이다.
+        GitHub와 연동되는 댓글 기능은 JS 없이 구현하기 쉽지 않다. 특히 블로그가 정적 HTML으로 서빙되는 지금 상태에서는 더더욱.
+        어차피 댓글이 많이 달리지 않아 댓글 기능을 포기할까도 생각해봤지만, 역시 너무 아쉽더라. 그래서 조금 정신나간 형태의 구현을 적용해봤다.
+      </p>
+      <p>
+        댓글을 입력받으면, 그 댓글 내용을 반영한 커밋을 작성하는 GitHub Actions 워크플로를 작성했다.
+        <a href="https://docs.github.com/ko/rest/actions/workflows?apiVersion=2022-11-28#create-a-workflow-dispatch-event" target="_blank">
+          Workflow dispatch event
+        </a> API를 활용하되, 토큰을 안전히 관리하고, 약간의 레이트리밋을 설정하기 위해 Cloudflare Workers를 한번 거치도록 했다.
+        또, 초기 게시글 HTML 파일의 복잡도를 낮추기 위해 댓글 폼을 매번 직접 작성하지 않고 <code>&lt;iframe /&gt;</code>으로 가져오도록 했다.
+        마찬가지로 Cloudflare Workers에서 호스팅되며, JS를 사용하지 않는다.
+      </p>
+      <p>
+        깃허브 액션이 커밋을 등록하고 캐시가 초기화 되기까지 약간의 시간이 걸리는 문제는 그냥 안내 문구 하나 추가하는 것으로 퉁쳤다.
+        워드프레스 같은 블로그 플랫폼에는 "관리자 검토 후 댓글 공개" 같은 기능이 보편화 되어 있으므로, 그 정도 딜레이는 관리자가 검토하는 척 하기로 했다.
+        <s>이 글을 보는 당신만 모른척하면 된다.</s>
+      </p>
+      <p>
+        JS 없는 프론트엔드를 위해 어처구니 없이 비효율적인 형태를 띄게 되었지만, 또 백엔드에서는 JS를 활용하고 있지만,
+        이 모든건 JS 없는 블로그라는 낭만을 충족하기 위함이므로 이 정도의 비효율은 감수하기로 했다.
+      </p>
+
+      <h3>짧은글 리다이렉트</h3>
+      <p>
+        짧은글 페이지에서는 한번에 50개의 짧은글을 출력한다. (그럴 예정이다.) 게시글에서 짧은글을 참조하는 상황을 위해 오래된 짧은글들도 아카이빙 해야한다.
+        이를 위해 <code>/notes/1-50</code> 형태의 URL을 설정했다. 문제는 상단 네비게이션의 짧은글 메뉴다.
+        위에서 언급한 "통짜 HTML 파일" 형태에서는 각 HTML 파일마다 짧은글 메뉴를 직접 링크하고 있어,
+        만약 <code>/notes/51-100</code>을 사용할 때가 되면 모든 게시글의 링크를 하나 하나 바꿔줘야하는 문제가 발생한다.
+      </p>
+      <p>
+        이러한 귀찮음을 해결하기 위해 <code>/notes</code>를 만들고, 여기에 접속하면 제일 최신 페이지로 리다이렉트 하도록 했다.
+        마찬가지로 JS를 사용하지 않기 위해 <code>&lt;meta http-equiv="refresh" /&gt;</code>를 사용했다.
+        2010년 이후로 더 이상 써본 적 없는 기능을 정말 오랫만에 꺼내썼다. 감회가 새롭더라.
+      </p>
+
+      <h2>마무리</h2>
+      <p>
+        이상한 기술 요소는 이게 전부다. 쓰고 보니 생각보다 별거 없어서 당황했다. 아무쪼록 노엽게 보지 말고, 재미로만 봐줘라.
+      </p>
+    </article>
+
+    <section class="post__comment">
+      <iframe id="comment-form" src="https://reply.nemorize.me/?path=/blog/202507/blog-renewal"></iframe>
+      <div id="comments"></div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer__copyright">
+      &copy; 2025 Ji Yong, Kim. All rights reserved.
+    </p>
+    <nav class="footer__nav">
+      <a class="footer__nav-item" href="/tools">
+        도구함
+      </a>
+      <a class="footer__nav-item" href="https://github.com/nemorize" target="_blank">
+        GitHub
+      </a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
