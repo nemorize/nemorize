@@ -169,7 +169,7 @@ export default {
 			if (cookie['auth-token']) {
 				const verified = await jwt.verify(cookie['auth-token'], env.JWT_SECRET_KEY)
 				if (verified && verified.payload.iss === env.BLOG_HOST && verified.payload.sub) {
-					fetch(`https://api.github.com/repos/${GITHUB_WORKFLOW_REPO}/actions/workflows/${GITHUB_WORKFLOW_ID}/dispatches`, {
+					fetch(`https://api.github.com/repos/${env.GITHUB_WORKFLOW_REPO}/actions/workflows/${env.GITHUB_WORKFLOW_ID}/dispatches`, {
 						method: 'POST',
 						headers: {
 							'user-agent': 'nemorize-reply-app',
