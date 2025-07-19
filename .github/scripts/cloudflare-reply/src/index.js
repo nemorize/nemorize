@@ -10,6 +10,7 @@ import noContentHtml from './no-content.html'
 import badFormHtml from './bad-form.html'
 import unAuthFormHtml from './unauth-form.html'
 import authFormHtml from './auth-form.html'
+import serverErrorHtml from './server-error.html'
 
 export default {
 	async fetch(request, env, ctx) {
@@ -94,7 +95,13 @@ export default {
 					}
 				})
 			} catch (e) {
-				return new Response(e.message, { status: 500 })
+				console.error(e)
+				return new Response(String(serverErrorHtml), {
+					status: 500,
+					headers: {
+						'content-type': 'text/html; charset=utf-8',
+					}
+				})
 			}
 		}
 		if (request.method === 'GET' && pathname === '/') {
@@ -169,21 +176,41 @@ export default {
 			if (cookie['auth-token']) {
 				const verified = await jwt.verify(cookie['auth-token'], env.JWT_SECRET_KEY)
 				if (verified && verified.payload.iss === env.BLOG_HOST && verified.payload.sub) {
-					fetch(`https://api.github.com/repos/${env.GITHUB_WORKFLOW_REPO}/actions/workflows/${env.GITHUB_WORKFLOW_ID}/dispatches`, {
-						method: 'POST',
-						headers: {
-							'user-agent': 'nemorize-reply-app',
-							'accept': 'application/vnd.github+json',
-							'authorization': `Bearer ${env.GITHUB_WORKFLOW_TOKEN}`,
-							'x-github-api-version': '2022-11-28'
-						},
-						body: JSON.stringify({
-							path,
-							content,
-							username: verified.payload.sub,
-						}),
-					}).then().catch()
-					return Response.redirect(`https://${env.BLOG_HOST}${path}`, 302)
+					try {
+						const response = await fetch(`https://api.github.com/repos/${env.GITHUB_WORKFLOW_REPO}/actions/workflows/${env.GITHUB_WORKFLOW_ID}/dispatches`, {
+							method: 'POST',
+							headers: {
+								'user-agent': 'nemorize-reply-app',
+								'accept': 'application/vnd.github+json',
+								'authorization': `Bearer ${env.GITHUB_WORKFLOW_TOKEN}`,
+								'x-github-api-version': '2022-11-28'
+							},
+							body: JSON.stringify({
+								path,
+								content,
+								username: verified.payload.sub,
+							}),
+						})
+						const output = await response.json()
+						if (output.error) {
+							console.error(output)
+							return new Response(String(serverErrorHtml), {
+								status: 500,
+								headers: {
+									'content-type': 'text/html; charset=utf-8',
+								}
+							})
+						}
+						return Response.redirect(`https://${env.BLOG_HOST}${path}`, 302)
+					} catch (e) {
+						console.error(e)
+						return new Response(String(serverErrorHtml), {
+							status: 500,
+							headers: {
+								'content-type': 'text/html; charset=utf-8',
+							}
+						})
+					}
 				}
 			}
 			return new Response(String(badRequestHtml), {
