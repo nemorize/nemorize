@@ -186,9 +186,12 @@ export default {
 								'x-github-api-version': '2022-11-28'
 							},
 							body: JSON.stringify({
-								path,
-								content,
-								username: verified.payload.sub,
+								ref: 'main',
+								inputs: {
+									path,
+									content,
+									username: verified.payload.sub,
+								},
 							}),
 						})
 						const output = await response.json()
