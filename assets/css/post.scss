@@ -126,6 +126,7 @@
       img {
         width: 100%;
         max-width: 600px;
+        height: auto;
         border-radius: 4px;
       }
 
@@ -138,6 +139,7 @@
     &--images {
       img {
         width: 100%;
+        height: auto;
         border-radius: 4px;
       }
     }
@@ -180,6 +182,7 @@
 
         img {
           width: 20px;
+          height: auto;
           aspect-ratio: 1;
           object-fit: cover;
           border-radius: 4px;

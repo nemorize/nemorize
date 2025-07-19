@@ -6,7 +6,7 @@ const insertAfter = '<div id="comments"></div>'
 const commentTemplate = `
       <div class="post__comment-item">
         <div class="post__comment-item-header">
-          <img src="https://github.com/{{ username }}.png" alt="{{ username }}" />
+          <img src="https://github.com/{{ username }}.png" alt="{{ username }}" width="320" height="320" />
           <span>{{ username }}</span>
           <time>${format(TZDate.tz('Asia/Seoul'), 'yyyy-MM-dd HH:mm')}</time>
         </div>

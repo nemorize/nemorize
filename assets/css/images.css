@@ -36,6 +36,7 @@
 }
 .images__section a img {
   width: 100%;
+  height: auto;
   border-radius: 4px;
   transition: opacity 0.25s, filter 0.25s;
 }

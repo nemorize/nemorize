@@ -97,6 +97,7 @@
 .post__body figure img {
   width: 100%;
   max-width: 600px;
+  height: auto;
   border-radius: 4px;
 }
 .post__body figure figcaption {
@@ -105,6 +106,7 @@
 }
 .post__body--images img {
   width: 100%;
+  height: auto;
   border-radius: 4px;
 }
 .post__comment {
@@ -138,6 +140,7 @@
 }
 .post__comment-item-header img {
   width: 20px;
+  height: auto;
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 4px;
