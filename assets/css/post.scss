@@ -26,6 +26,15 @@
         font-weight: 550;
         line-height: 1;
       }
+
+      time {
+        flex: 1;
+
+        color: var(--low);
+        font-size: 13px;
+        font-style: normal;
+        text-align: right;
+      }
     }
 
     &-meta {
@@ -123,6 +132,13 @@
       figcaption {
         color: var(--low);
         font-size: 12px;
+      }
+    }
+
+    &--images {
+      img {
+        width: 100%;
+        border-radius: 4px;
       }
     }
   }

@@ -21,6 +21,13 @@
   font-weight: 550;
   line-height: 1;
 }
+.post__header-tags time {
+  flex: 1;
+  color: var(--low);
+  font-size: 13px;
+  font-style: normal;
+  text-align: right;
+}
 .post__header-meta {
   display: flex;
   flex-wrap: wrap;
@@ -95,6 +102,10 @@
 .post__body figure figcaption {
   color: var(--low);
   font-size: 12px;
+}
+.post__body--images img {
+  width: 100%;
+  border-radius: 4px;
 }
 .post__comment {
   width: 100%;
