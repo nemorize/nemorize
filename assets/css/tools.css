@@ -1,0 +1,35 @@
+.tools h2 {
+  margin: 24px 0 12px;
+  color: var(--high);
+  font-size: 18px;
+  font-weight: 650;
+}
+.tools h2:first-child {
+  margin-top: 0;
+}
+.tools__item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+}
+.tools__item--last {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.tools__item-title {
+  color: var(--high);
+  font-size: 12px;
+  font-weight: 650;
+}
+.tools__item-description {
+  margin: 0;
+  color: var(--mid);
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=tools.css.map */

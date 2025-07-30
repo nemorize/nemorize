@@ -1,0 +1,44 @@
+.tools {
+  h2 {
+    margin: 24px 0 12px;
+
+    color: var(--high);
+    font-size: 18px;
+    font-weight: 650;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+
+    text-decoration: none;
+
+    &--last {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    &-title {
+      color: var(--high);
+      font-size: 12px;
+      font-weight: 650;
+    }
+
+    &-description {
+      margin: 0;
+
+      color: var(--mid);
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,217 @@
+.tools .lotto {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 24px;
+}
+.tools .lotto:nth-last-child(1) {
+  --seed: round(var(--r1) * 100000000 + var(--r2) * 10000);
+}
+.tools .lotto:nth-last-child(2) {
+  --seed: round(var(--r3) * 100000000 + var(--r4) * 10000);
+}
+.tools .lotto:nth-last-child(3) {
+  --seed: round(var(--r5) * 100000000 + var(--r6) * 10000);
+}
+.tools .lotto:nth-last-child(4) {
+  --seed: round(var(--r7) * 100000000 + var(--r8) * 10000);
+}
+.tools .lotto:nth-last-child(5) {
+  --seed: round(var(--r9) * 100000000 + var(--r10) * 10000);
+}
+.tools .lotto h3 {
+  margin: 0;
+  color: var(--high);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+}
+.tools .lotto h3 span {
+  margin-left: 4px;
+  color: var(--low);
+  font-family: "D2Coding", monospace;
+  font-size: 12px;
+  font-weight: 450;
+  background-color: var(--border);
+}
+.tools .lotto h3 span i:after {
+  counter-reset: seed var(--seed);
+  content: counter(seed);
+  font-style: normal;
+}
+.tools .lotto__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  width: 212px;
+  height: 32px;
+  overflow: hidden;
+}
+.tools .lotto__list span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 32px;
+  aspect-ratio: 1;
+  padding-top: 1px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 550;
+  line-height: 1;
+  text-align: center;
+}
+.tools .lotto__list span:nth-child(1), .tools .lotto__list span:nth-child(2), .tools .lotto__list span:nth-child(3), .tools .lotto__list span:nth-child(4), .tools .lotto__list span:nth-child(5), .tools .lotto__list span:nth-child(6), .tools .lotto__list span:nth-child(7), .tools .lotto__list span:nth-child(8), .tools .lotto__list span:nth-child(9), .tools .lotto__list span:nth-child(10) {
+  background-color: #FECF03;
+  color: #222222;
+}
+.tools .lotto__list span:nth-child(11), .tools .lotto__list span:nth-child(12), .tools .lotto__list span:nth-child(13), .tools .lotto__list span:nth-child(14), .tools .lotto__list span:nth-child(15), .tools .lotto__list span:nth-child(16), .tools .lotto__list span:nth-child(17), .tools .lotto__list span:nth-child(18), .tools .lotto__list span:nth-child(19), .tools .lotto__list span:nth-child(20) {
+  background-color: #0F58C1;
+}
+.tools .lotto__list span:nth-child(21), .tools .lotto__list span:nth-child(22), .tools .lotto__list span:nth-child(23), .tools .lotto__list span:nth-child(24), .tools .lotto__list span:nth-child(25), .tools .lotto__list span:nth-child(26), .tools .lotto__list span:nth-child(27), .tools .lotto__list span:nth-child(28), .tools .lotto__list span:nth-child(29), .tools .lotto__list span:nth-child(30) {
+  background-color: #E5161D;
+}
+.tools .lotto__list span:nth-child(31), .tools .lotto__list span:nth-child(32), .tools .lotto__list span:nth-child(33), .tools .lotto__list span:nth-child(34), .tools .lotto__list span:nth-child(35), .tools .lotto__list span:nth-child(36), .tools .lotto__list span:nth-child(37), .tools .lotto__list span:nth-child(38), .tools .lotto__list span:nth-child(39), .tools .lotto__list span:nth-child(40) {
+  background-color: #424242;
+}
+.tools .lotto__list span:nth-child(41), .tools .lotto__list span:nth-child(42), .tools .lotto__list span:nth-child(43), .tools .lotto__list span:nth-child(44), .tools .lotto__list span:nth-child(45) {
+  background-color: #3EC100;
+}
+.tools .lotto__list span:nth-child(1) {
+  order: calc(round(var(--seed) / 1) - round(var(--seed) / 100) * 100);
+}
+.tools .lotto__list span:nth-child(2) {
+  order: calc(round(var(--seed) / 10) - round(var(--seed) / 1000) * 100);
+}
+.tools .lotto__list span:nth-child(3) {
+  order: calc(round(var(--seed) / 100) - round(var(--seed) / 10000) * 100);
+}
+.tools .lotto__list span:nth-child(4) {
+  order: calc(round(var(--seed) / 1000) - round(var(--seed) / 100000) * 100);
+}
+.tools .lotto__list span:nth-child(5) {
+  order: calc(round(var(--seed) / 10000) - round(var(--seed) / 1000000) * 100);
+}
+.tools .lotto__list span:nth-child(6) {
+  order: calc(round(var(--seed) / 100000) - round(var(--seed) / 10000000) * 100);
+}
+.tools .lotto__list span:nth-child(7) {
+  order: calc(round(var(--seed) / 3) - round(var(--seed) / 300) * 100);
+}
+.tools .lotto__list span:nth-child(8) {
+  order: calc(round(var(--seed) / 30) - round(var(--seed) / 3000) * 100);
+}
+.tools .lotto__list span:nth-child(9) {
+  order: calc(round(var(--seed) / 300) - round(var(--seed) / 30000) * 100);
+}
+.tools .lotto__list span:nth-child(10) {
+  order: calc(round(var(--seed) / 3000) - round(var(--seed) / 300000) * 100);
+}
+.tools .lotto__list span:nth-child(11) {
+  order: calc(round(var(--seed) / 30000) - round(var(--seed) / 3000000) * 100);
+}
+.tools .lotto__list span:nth-child(12) {
+  order: calc(round(var(--seed) / 300000) - round(var(--seed) / 30000000) * 100);
+}
+.tools .lotto__list span:nth-child(13) {
+  order: calc(round(var(--seed) / 7) - round(var(--seed) / 700) * 100);
+}
+.tools .lotto__list span:nth-child(14) {
+  order: calc(round(var(--seed) / 70) - round(var(--seed) / 7000) * 100);
+}
+.tools .lotto__list span:nth-child(15) {
+  order: calc(round(var(--seed) / 700) - round(var(--seed) / 70000) * 100);
+}
+.tools .lotto__list span:nth-child(16) {
+  order: calc(round(var(--seed) / 7000) - round(var(--seed) / 700000) * 100);
+}
+.tools .lotto__list span:nth-child(17) {
+  order: calc(round(var(--seed) / 70000) - round(var(--seed) / 7000000) * 100);
+}
+.tools .lotto__list span:nth-child(18) {
+  order: calc(round(var(--seed) / 700000) - round(var(--seed) / 70000000) * 100);
+}
+.tools .lotto__list span:nth-child(19) {
+  order: calc(round(var(--seed) / 11) - round(var(--seed) / 1100) * 100);
+}
+.tools .lotto__list span:nth-child(20) {
+  order: calc(round(var(--seed) / 110) - round(var(--seed) / 11000) * 100);
+}
+.tools .lotto__list span:nth-child(21) {
+  order: calc(round(var(--seed) / 1100) - round(var(--seed) / 110000) * 100);
+}
+.tools .lotto__list span:nth-child(22) {
+  order: calc(round(var(--seed) / 11000) - round(var(--seed) / 1100000) * 100);
+}
+.tools .lotto__list span:nth-child(23) {
+  order: calc(round(var(--seed) / 110000) - round(var(--seed) / 11000000) * 100);
+}
+.tools .lotto__list span:nth-child(24) {
+  order: calc(round(var(--seed) / 13) - round(var(--seed) / 1300) * 100);
+}
+.tools .lotto__list span:nth-child(25) {
+  order: calc(round(var(--seed) / 130) - round(var(--seed) / 13000) * 100);
+}
+.tools .lotto__list span:nth-child(26) {
+  order: calc(round(var(--seed) / 1300) - round(var(--seed) / 130000) * 100);
+}
+.tools .lotto__list span:nth-child(27) {
+  order: calc(round(var(--seed) / 13000) - round(var(--seed) / 1300000) * 100);
+}
+.tools .lotto__list span:nth-child(28) {
+  order: calc(round(var(--seed) / 130000) - round(var(--seed) / 13000000) * 100);
+}
+.tools .lotto__list span:nth-child(29) {
+  order: calc(round(var(--seed) / 17) - round(var(--seed) / 1700) * 100);
+}
+.tools .lotto__list span:nth-child(30) {
+  order: calc(round(var(--seed) / 170) - round(var(--seed) / 17000) * 100);
+}
+.tools .lotto__list span:nth-child(31) {
+  order: calc(round(var(--seed) / 1700) - round(var(--seed) / 170000) * 100);
+}
+.tools .lotto__list span:nth-child(32) {
+  order: calc(round(var(--seed) / 17000) - round(var(--seed) / 1700000) * 100);
+}
+.tools .lotto__list span:nth-child(33) {
+  order: calc(round(var(--seed) / 170000) - round(var(--seed) / 17000000) * 100);
+}
+.tools .lotto__list span:nth-child(34) {
+  order: calc(round(var(--seed) / 19) - round(var(--seed) / 1900) * 100);
+}
+.tools .lotto__list span:nth-child(35) {
+  order: calc(round(var(--seed) / 190) - round(var(--seed) / 19000) * 100);
+}
+.tools .lotto__list span:nth-child(36) {
+  order: calc(round(var(--seed) / 1900) - round(var(--seed) / 190000) * 100);
+}
+.tools .lotto__list span:nth-child(37) {
+  order: calc(round(var(--seed) / 19000) - round(var(--seed) / 1900000) * 100);
+}
+.tools .lotto__list span:nth-child(38) {
+  order: calc(round(var(--seed) / 190000) - round(var(--seed) / 19000000) * 100);
+}
+.tools .lotto__list span:nth-child(39) {
+  order: calc(round(var(--seed) / 23) - round(var(--seed) / 2300) * 100);
+}
+.tools .lotto__list span:nth-child(40) {
+  order: calc(round(var(--seed) / 230) - round(var(--seed) / 23000) * 100);
+}
+.tools .lotto__list span:nth-child(41) {
+  order: calc(round(var(--seed) / 2300) - round(var(--seed) / 230000) * 100);
+}
+.tools .lotto__list span:nth-child(42) {
+  order: calc(round(var(--seed) / 23000) - round(var(--seed) / 2300000) * 100);
+}
+.tools .lotto__list span:nth-child(43) {
+  order: calc(round(var(--seed) / 230000) - round(var(--seed) / 23000000) * 100);
+}
+.tools .lotto__list span:nth-child(44) {
+  order: calc(round(var(--seed) / 29) - round(var(--seed) / 2900) * 100);
+}
+.tools .lotto__list span:nth-child(45) {
+  order: calc(round(var(--seed) / 290) - round(var(--seed) / 29000) * 100);
+}
+
+/*# sourceMappingURL=style.css.map */
