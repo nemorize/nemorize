@@ -1,0 +1,17 @@
+{
+	"name": "cloudflare-reply",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev"
+	},
+	"devDependencies": {
+		"wrangler": "^4.25.0"
+	},
+	"dependencies": {
+		"@tsndr/cloudflare-worker-jwt": "^3.2.0",
+		"cookie": "^1.0.2"
+	}
+}
