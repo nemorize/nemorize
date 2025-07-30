@@ -90,6 +90,7 @@ export default {
 				return new Response('', {
 					status: 302,
 					headers: {
+						'set-cookie': `auth-token=${token}; HttpOnly; SameSite=Lax; Secure`,
 						'location': `https://${env.BLOG_HOST}${path}#comment-form`,
 					}
 				})
