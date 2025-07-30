@@ -2,6 +2,8 @@ name: Deploy Cloudflare Reply
 
 on:
   push:
+    paths:
+      - .github/scripts/cloudflare-reply/**
 
 jobs:
   deploy:

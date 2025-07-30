@@ -2,6 +2,8 @@ name: Deploy Cloudflare Search
 
 on:
   push:
+    paths:
+      - .github/scripts/cloudflare-search/**
 
 jobs:
   deploy:
