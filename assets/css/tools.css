@@ -19,7 +19,7 @@
 .tools__item--last {
   margin-bottom: 0;
   padding-bottom: 0;
-  border-bottom: 0;
+  border-bottom: 0 none;
 }
 .tools__item-title {
   color: var(--high);
