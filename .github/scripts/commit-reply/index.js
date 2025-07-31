@@ -28,7 +28,13 @@ function escape (text) {
 function build (username, content) {
   return commentTemplate
     .replaceAll('{{ username }}', escape(username))
-    .replaceAll('{{ content }}', escape(content))
+    .replaceAll(
+      '{{ content }}',
+      escape(content)
+        .trim()
+        .replace(/\n{2,}/g, '\n')
+        .replaceAll('\n', '<br />\n          ')
+    )
 }
 
 const raw = process.env.json
