@@ -11,6 +11,7 @@
 .index__jumbotron img {
   width: 100%;
   height: auto;
+  aspect-ratio: 720/360;
   margin-top: -24px;
   margin-bottom: 12px;
   border-radius: 4px;
