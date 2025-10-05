@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>블로그에서 댓글 기능을 삭제했다, 그리고 약간의 잡설. | nemorize.me</title>
+  <link rel="shortcut icon" href="https://github.com/nemorize.png" />
+  <meta name="description" content="@nemorize (Ji Yong, Kim)" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="nemorize.me" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:title" content="블로그에서 댓글 기능을 삭제했다, 그리고 약간의 잡설. | nemorize.me" />
+  <meta property="og:description" content="@nemorize (Ji Yong, Kim)" />
+
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/post.css" />
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <a class="header__brand" href="/" title="nemorize.me">
+      네모라이즈
+    </a>
+    <nav class="header__nav">
+      <a class="header__nav-item" href="/">
+        나
+      </a>
+      <a class="header__nav-item header__nav-item--active" href="/blog">
+        게시글
+      </a>
+      <a class="header__nav-item" href="/images">
+        사진첩
+      </a>
+      <a class="header__nav-item" href="/notes">
+        짧은글
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main class="post">
+  <div class="container">
+    <div class="post__header">
+      <div class="post__header-tags">
+        <span>프로그래밍</span>
+        <span>블로그</span>
+      </div>
+      <h1>블로그에서 댓글 기능을 삭제했다, 그리고 약간의 잡설.</h1>
+      <div class="post__header-meta">
+        <time>2025년 10월 06일 03시 50분</time>
+        <i>|</i>
+        <span>완독까지 약 3분</span>
+      </div>
+    </div>
+
+    <article class="post__body">
+      <p>
+        No-JS 블로그를 작성하며 야심차게 준비했던 댓글 기능을 삭제했다.
+      </p>
+      <p>
+        예상하고야 있었지만 사용률이 저조하기도 하고, 그 저조한 사용률 대비 CF Workers, GH Actions를 2-3개나 사용하는게 아니꼽기도 해서 삭제했다.
+        No-JS를 노린다면서 JS 백엔드를 가지는 것도 좀 웃기기도 하고. 다시 초심으로 돌아와 진정으로 HTML, CSS만 사용하는 블로그를 작성하기로 했다.
+      </p>
+      <p>
+        다만 도구함에 들어가는 몇몇 기능들은 예외로 두어야 하지 않을까 싶다. 만들어 넣고 싶은 기능이 많은데, JS 없이 작성이 불가능한 기능들이 많더라.
+        아쉽지만 이정도는 포기해야 하지 않을까 싶다.
+      </p>
+      <h2>view-transition</h2>
+      <p>
+        최근 또 다른 백엔드 없는 HTML과 CSS로만 구성된 사이트를 하나 만들었다. 화면 전환 애니메이션이 없으면 너무 허전한 디자인이라, 얼마 전에 추가된
+        <code>view-transition</code> 기능을 사용했다. 생각보다 더 물건이다. 트랜지션 정의 방법이 조금 이해하기 힘든 감이 있지만, 한번 이해하고
+        적응하기 시작하면 재미있는 UI를 마구 찍어낼 수 있게 된다.
+      </p>
+      <p>
+        <code>view-transition</code>에 아쉬운 점이 없지는 않다. 페이지 이동 시 사용자에게 부드러운 전환을 보여주어 로딩 시점의 지루함을 줄여주는
+        것이 이것의 목적인데, 화면간 전환을 위해 다음 페이지를 먼저 로딩하는 절차가 추가되어버렸다. 그 말은 즉 기존에는 하얀 화면으로 전환되어 사용자 클릭에
+        따라 새로운 페이지로 이동했음을(또는 이동하고 있음을) 인지할 수단이 존재했지만, 뷰 트랜지션을 도입한 이후엔 사용자 클릭 이후 다음 페이지가 어느 정도
+        로딩되기 전까지는 사용자가 새로운 페이지로 이동하고 있음을 인지할 수단이 없다는 것이다. 클릭 이후 '어 클릭이 안됐나?' 하고 의심하게 만든다는 것이고.
+      </p>
+      <p>
+        도입된 지 얼마 지나지 않은 시점이기도 하고, 위에서 설명한 것과 같은 아쉬움이 존재하기도 해서 진지한 프로젝트에서 도입하기엔 이르다는 생각이 든다.
+        뭐... 이번에 제작한 사이트는 성격상으론 진지하지만, HTML 파일 몇 개 정도로만 구성된 정말 작은 규모의 사이트라 그냥 사용하기로 했다.
+      </p>
+      <h2>추석</h2>
+      <p>
+        추석이다. 올해 뭘 이룬 것은 없는데 벌써 1년의 3/4가 지나갔다. 참 서글프다. 이 글을 읽는 그대들은 의미 있는 한해를 보냈기를 바라며ㅎㅎ... 즐거운
+        한가위 연휴 되어라. 나도 이번 연휴엔 하루 이틀 정도라도 쉴 예정이다.
+      </p>
+    </article>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer__copyright">
+      &copy; 2025 Ji Yong, Kim. All rights reserved.
+    </p>
+    <nav class="footer__nav">
+      <a class="footer__nav-item" href="/tools">
+        도구함
+      </a>
+      <a class="footer__nav-item" href="/licenses">
+        라이선스
+      </a>
+      <a class="footer__nav-item" href="https://github.com/nemorize" target="_blank">
+        GitHub
+      </a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

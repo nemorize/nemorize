@@ -1,7 +1,0 @@
-{
-  "type": "module",
-  "dependencies": {
-    "@date-fns/tz": "^1.2.0",
-    "date-fns": "^4.1.0"
-  }
-}
