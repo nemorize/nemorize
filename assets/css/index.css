@@ -115,6 +115,61 @@
   font-size: 12px;
   transition: color 0.25s;
 }
+.index__follow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.index__follow a {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 6px 9px 6px 8px;
+  overflow: hidden;
+  background-color: var(--border);
+  border-radius: 4px;
+  color: var(--high) !important;
+  line-height: 1;
+  text-decoration: none;
+}
+.index__follow a svg, .index__follow a span {
+  position: relative;
+  z-index: 5;
+}
+.index__follow a svg {
+  color: inherit;
+  width: 11px;
+  height: 11px;
+}
+.index__follow a span {
+  color: inherit;
+  font-size: 12px;
+  font-weight: 450;
+}
+.index__follow a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+@media (prefers-color-scheme: dark) {
+  .index__follow a:before {
+    background-color: #FFFFFF;
+  }
+}
+.index__follow a:hover:before {
+  opacity: 0.05;
+}
 
 html:after {
   content: "";
