@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>PHP 8.5가 곧 출시된다 | nemorize.me</title>
+  <link rel="shortcut icon" href="https://github.com/nemorize.png" />
+  <meta name="description" content="@nemorize (Ji Yong, Kim)" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="nemorize.me" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:title" content="PHP 8.5가 곧 출시된다 | nemorize.me" />
+  <meta property="og:description" content="@nemorize (Ji Yong, Kim)" />
+
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/post.css" />
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <a class="header__brand" href="/" title="nemorize.me">
+      네모라이즈
+    </a>
+    <nav class="header__nav">
+      <a class="header__nav-item" href="/">
+        나
+      </a>
+      <a class="header__nav-item header__nav-item--active" href="/blog">
+        게시글
+      </a>
+      <a class="header__nav-item" href="/images">
+        사진첩
+      </a>
+      <a class="header__nav-item" href="/notes">
+        짧은글
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main class="post">
+  <div class="container">
+    <div class="post__header">
+      <div class="post__header-tags">
+        <span>프로그래밍</span>
+        <span>PHP</span>
+      </div>
+      <h1>PHP 8.5가 곧 출시된다</h1>
+      <div class="post__header-meta">
+        <time>2025년 11월 20일 03시 16분</time>
+        <i>|</i>
+        <span>완독까지 약 7분</span>
+      </div>
+    </div>
+
+    <article class="post__body">
+      <p>
+        PHP 8.5가 곧 출시된다. 아마도 몇시간 이내에, 늦어도 내일이면.
+      </p>
+      <p>
+        이번 PHP 8.5에는 꽤 흥미로운 기능이 몇가지 추가된다. 이 글에서는 내가 감명깊게 보았거나, 유용하게 쓸 것으로 생각되는 기능 몇가지를 소개할 예정이
+        다. 여기서 소개하지 않은 기능들도 많이 있으니 전체 구현 목록은
+        <a href="https://wiki.php.net/rfc#php_85" target="_blank">여기</a>를 확인하자.
+      </p>
+      <h2>Pipe operator</h2>
+      <p>
+        <a href="https://wiki.php.net/rfc/pipe-operator-v3" target="_blank">PHP RFC 링크</a><br />
+        먼저 감명깊게 본, 많은 사람들이 기대하고 있는 파이프 연산자다. 나는 개인적으로 이번에 추가된 파이프 연산자 기능만으론 활용도가 높지 않다고 생각한다.
+      </p>
+      <figure>
+        <img src="/blog/202511/php-8.5-coming-soon/pipe-example.png" alt="" />
+        <figcaption>아직 블로그에 코드 하이라이터 기능을 구현하지 않은 상태라; 스크린샷으로 대체ㅎㅎ;</figcaption>
+      </figure>
+      <p>
+        위에서 볼 수 있는 것처럼 함수가 받는 파라미터가 하나인 경우 그럭저럭 예쁘게 사용할 수 있다. 물론 PHP 특유의 <code>function(...)</code>
+        형태는 다른 곳에선 이뻐 보일지 몰라도, 파이프 연산자와 함께 사용할 때에는 아쉬움이 남는다. <code>(...)</code> 범벅이 되어 시각적으로도 아쉽고
+        성능면에선 Closure 변환이 미세한 성능 저하를 보이지 않을까 걱정스럽기도 하나... 그래도 충분히 용인할 수 있는 수준이다.
+      </p>
+      <p>
+        문제는 파라미터가 하나 이상일 경우다. 이번 파이프 연산자는 하나의 파라미터만 허용하는 함수만을 받으므로, 두개의 파라미터를 받는 함수는 새로운 익명
+        함수로 감싸줘야 한다. 스크린샷에서 마지막 2개 라인이 보여주는 것처럼. 파라미터를 하나만 받는 함수는 그렇게 많지 않으므로, 사실상 매번 익명 함수를
+        감싸 사용해야 한다는 것인데... 크게 와닿지 않는다.
+      </p>
+      <figure>
+        <img src="/blog/202511/php-8.5-coming-soon/pipe-proposal-example.png" alt="" />
+        <figcaption>이미 다른 사람이 유사한 문법의 무언가를 제안했을지도.</figcaption>
+      </figure>
+      <p>
+        나는 위와 같은 새로운 문법을 제안하고 싶다. 물론 이러한 형태의 문법을 지원하려면 파이프 연산자 뿐 아니라, Closure 전반의 수정이 있어야 할
+        것이라 받아들여지기부터 쉽지 않을 것이고, 받아들여진다고 해도 오랜 시간이 걸리지 않을까 싶다.
+      </p>
+      <h2>Clone with</h2>
+      <p>
+        <a href="https://wiki.php.net/rfc/clone_with_v2" target="_blank">PHP RFC 링크</a><br />
+        이제부턴 내가 유용하게 쓸 것으로 생각되는 기능들이다. 그 중 첫번째 <code>clone()</code>.
+      </p>
+      <p>
+        지금까지 PHP의 객체를 <code>clone</code>한 뒤, 해당 객체의 <code>readonly</code> 설정된 속성 값을 변경하지 못했다. PHP의
+        <code>readonly</code>는 불변 속성을 뜻하므로 당연한 이야기지만, 그래서 오히려 <code>readonly</code>의 활용도가 많이 떨어졌다.
+        PSR-7의 불변 클래스/객체 권고 이후 불변 클래스와 객체를 작성하는 것이 권장되었으나, <code>readonly</code>의 제약으로 이를 온전히 활용하지
+        못하고 그냥 <code>private</code> 설정하는 것으로 그쳤다. 어쨌든 클래스 내부의 코드들은 그 클래스 작성자가 주의하기만 하면 되니까.
+      </p>
+      <p>
+        그러나 이젠 다르다. 객체를 <code>clone</code>할 때, 변경할 속성의 값을 같이 전달할 수 있도록 바뀌었다. 물론 <code>readonly</code>
+        속성도 마찬가지다. 이를 위해 먼저 키워드로 취급되었던 <code>clone</code>을 함수로 변경하고, 두번째 인자를 받도록 했다. 두번째 인자로는 변경할
+        속성 이름과 값의 맵 배열을 전달할 수 있다.
+      </p>
+      <figure>
+        <img src="/blog/202511/php-8.5-coming-soon/clone-with-example.png" alt="" />
+      </figure>
+      <p>
+        개인적으론 PHP의 문법 자체가 조금 더 다채로워졌으면 하는 바램이 있다. <code>clone($obj) { $this->a = 20; }</code> 같이 함수 콜 뒤에
+        <code>{}</code> 블럭이 시작되면 함수 마지막 파라미터에 해당 블럭의 내용을 Closure로 전달해준다던가. 이번 <code>clone</code> 뿐 아니라
+        여러 영역에서 더 표현력있게 사용할 수 있으리라 생각한다.
+      </p>
+      <h2>Asymmetric visibility for static properties</h2>
+      <p>
+        <a href="https://wiki.php.net/rfc/static-aviz" target="_blank">PHP RFC 링크</a><br />
+        PHP 8.4에서 도입된 비대칭 가시성 속성 기능을 스태틱 속성에서도 사용할 수 있도록 하는 기능이다.
+      </p>
+      <p>
+        물론 스태틱 속성 사용 자체를 자제하는게 제일이겠지만, 세상 살이가 뭐 그렇게 마음대로 돌아가는게 아니다. DI 컨테이너 없이 가볍게 구성하고 싶은
+        프로젝트도 수두룩 빽빽하다. 그럴 때마다 매번 고민이었던 점은 싱글톤 객체를 안전하게 보관하기 힘들다는 점이었다.
+      </p>
+      <figure>
+        <img src="/blog/202511/php-8.5-coming-soon/singleton-example.png" alt="" />
+      </figure>
+      <p>
+        지금까지는 싱글톤 객체를 관리하기 위해 매번 이러한 코드를 작성하고, 객체를 가져올 때에도 <code>Singleton::getInstance()</code> 형태로
+        처리해야 했다. (물론 코드의 중복은 <code>trait</code>를 사용해 해결할 수 있다.) 크게 불편하지는 않지만, 프로퍼티 훅도 생긴 마당에 이런
+        불필요한 메서드를 유지하는 것은 참 아쉬운 부분이다.
+      </p>
+      <figure>
+        <img src="/blog/202511/php-8.5-coming-soon/static-asymmetric-example.png" alt="" />
+      </figure>
+      <p>
+        그러나 이젠 <code>Singleton::$instance</code>를 개방해도 안전하게 처리할 수 있게 되었다. 아쉬운 점이라면 이번 업데이트는 비대칭 가시성을
+        설정하는 것에 그치기 때문에, <code>Singleton::init()</code>과 같이 <code>::$instance</code>를 초기화하는 절차가 필요하다는 것이다.
+        추후에는 스태틱 속성에서도 프로퍼티 훅을 사용할 수 있으면 좋겠다.
+      </p>
+      <p>
+        뭐, 꼭 싱글톤 객체와 같은 상황이 아니더라도 얼마든지 이를 활용할 영역들이 많으므로, 그럼에도 개인적으론 기대가 크다. 특히 일종의 "내부에서 변경할
+        수 있는 클래스 상수"와 같은 느낌으로 활용할 수 있다는 점에서. 원래 이걸 예시로 들 생각이었으나, 충분한 가치를 느낄 수 있는 예시 코드를 작성하려니
+        생각보다 길어져서 스태틱 속성을 제일 많이 사용하게 되는 싱글톤 패턴을 예시로 들었다.
+      </p>
+      <h2>Closures in constant expression</h2>
+      <p>
+        <a href="https://wiki.php.net/rfc/closures_in_const_expr" target="_blank">PHP RFC 링크</a><br />
+        Closure을 상수의 값으로 사용할 수 있도록 하는 기능이다. 조금 더 정확하게는, Closure을 상수 표현식에 포함하는 개선안이다.
+      </p>
+      <p>
+        개인적으로 제일 자주, 제일 많이 사용하지 않을까 싶은 기능이다. Closure이 상수 표현식으로 취급되면 가능해지는 것들이 아주 많다.
+      </p>
+      <figure>
+        <img src="/blog/202511/php-8.5-coming-soon/closure-not-constant-example.png" alt="" />
+      </figure>
+      <p>
+        이전에는 Closure이 상수 표현식이 아니었기 때문에, 위와 같이 함수 파라미터의 기본값으로 전달할 수 없었다. 이를 처리하기 위해
+        <code>null</code> 타입을 허용하고, <code>null</code> 값을 기본값으로 설정한 뒤, 함수 내부에서 해당 값이 <code>null</code>인 경우
+        기본값을 Closure로 바꿔주는 코드가 필요했다. 코드가 장황해지고, 의도하지 않은 nullable 설정 등 아쉬운 점이 많았다.
+      </p>
+      <figure>
+        <img src="/blog/202511/php-8.5-coming-soon/closure-in-default-value-example.png" alt="" />
+      </figure>
+      <p>
+        그러나 이젠 Closure을 기본값으로 설정할 수 있게 되었다. 더 명확한 타입, 더 깔끔한 코드를 작성할 수 있고, IDE 또는 정적 도구가 분석하기도 더
+        용이해졌다.
+      </p>
+      <figure>
+        <img src="/blog/202511/php-8.5-coming-soon/closure-in-constant.png" alt="" />
+      </figure>
+      <p>
+        함수 기본값 뿐 아니라 위 스크린샷처럼 여러 용도로 활용할 수 있다. Closure을 상수로 선언하여 <code>usort</code>에 사용할 프리셋 함수 등으로
+        선언할 수도 있고, 클래스 속성의 기본값에 Closure을 넣어줄 수도 있다. 최근 생겨난 Attribute의 인자값으로 전달할 수도 있다.
+      </p>
+      <h2>결론</h2>
+      <p>
+        PHP는 8.x들어 꽤 적극적인 신기능 도입을 진행하고 있다. FCC(<code>function(...)</code>)같은 문자열 위주의 함수 처리에서 벗어나려는
+        시도부터, Attribute, Property hook, Asymmetric Visibility 등등 PHP 언어 자체의 사용성을 높여주는 여러 기능들.
+        또 지금껏 지적되어온 함수 시그니처간 통일성 부재를 해결하기 위한 여러 <code>str_*</code> <code>array_*</code> 함수들, 여러 유틸리티
+        클래스 등등까지 정말 많은 기능이 짧은 몇년 내 다수 도입되었다.
+      </p>
+      <p>
+        물론 지금까지 이어져온 PHP 레거시 코드들과 섞여 생각보다 큰 효용을 보기 힘든 것들도 많고, 이번 PHP 8.5의 기능들 중 일부도 그런 감이 꽤 있지만
+        이렇게 발전해 나가는 모습을 보니 다시 한번 PHP에 기대를 걸어봐도 괜찮을까...? 하는 생각이 든다. 심지어 최근 비동기 함수라든가, 런타임
+        제네릭이라던가 하는 '이게 진짜 PHP에 도입된다고?!' 싶은 기능들이 꽤 심도있게 논의되고 있는 것을 보면, 최근 내 포트폴리오에서 절반 이상 축소했던
+        PHP를 다시 늘려봐도 괜찮지 않을까 싶다.
+      </p>
+    </article>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer__copyright">
+      &copy; 2025 Ji Yong, Kim. All rights reserved.
+    </p>
+    <nav class="footer__nav">
+      <a class="footer__nav-item" href="/tools">
+        도구함
+      </a>
+      <a class="footer__nav-item" href="/licenses">
+        라이선스
+      </a>
+      <a class="footer__nav-item" href="https://github.com/nemorize" target="_blank">
+        GitHub
+      </a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
