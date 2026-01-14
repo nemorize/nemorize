@@ -83,6 +83,14 @@
   font-family: "D2Coding", monospace;
   font-size: 13px;
 }
+.post__body blockquote {
+  margin-left: 0;
+  padding-left: 20px;
+  border-left: 6px solid var(--border);
+  color: var(--low);
+  font-weight: 500;
+  font-style: italic;
+}
 .post__body a {
   color: var(--primary);
   text-underline-offset: 4px;
