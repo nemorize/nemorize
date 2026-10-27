@@ -13,19 +13,17 @@ PHP 8.5가 곧 출시된다. 아마도 몇시간 이내에, 늦어도 내일이�
 
 <a href="https://wiki.php.net/rfc/pipe-operator-v3" target="_blank">PHP RFC 링크</a><br> 먼저 감명깊게 본, 많은 사람들이 기대하고 있는 파이프 연산자다. 나는 개인적으로 이번에 추가된 파이프 연산자 기능만으론 활용도가 높지 않다고 생각한다.
 
-<figure>
-  <img src="/blog/202511/php-8.5-coming-soon/pipe-example.png" alt="">
-  <figcaption>아직 블로그에 코드 하이라이터 기능을 구현하지 않은 상태라; 스크린샷으로 대체ㅎㅎ;</figcaption>
-</figure>
+![](/blog/202511/php-8.5-coming-soon/pipe-example.png)
+
+*아직 블로그에 코드 하이라이터 기능을 구현하지 않은 상태라; 스크린샷으로 대체ㅎㅎ;*
 
 위에서 볼 수 있는 것처럼 함수가 받는 파라미터가 하나인 경우 그럭저럭 예쁘게 사용할 수 있다. 물론 PHP 특유의 `function(...)` 형태는 다른 곳에선 이뻐 보일지 몰라도, 파이프 연산자와 함께 사용할 때에는 아쉬움이 남는다. `(...)` 범벅이 되어 시각적으로도 아쉽고 성능면에선 Closure 변환이 미세한 성능 저하를 보이지 않을까 걱정스럽기도 하나... 그래도 충분히 용인할 수 있는 수준이다.
 
 문제는 파라미터가 하나 이상일 경우다. 이번 파이프 연산자는 하나의 파라미터만 허용하는 함수만을 받으므로, 두개의 파라미터를 받는 함수는 새로운 익명 함수로 감싸줘야 한다. 스크린샷에서 마지막 2개 라인이 보여주는 것처럼. 파라미터를 하나만 받는 함수는 그렇게 많지 않으므로, 사실상 매번 익명 함수를 감싸 사용해야 한다는 것인데... 크게 와닿지 않는다.
 
-<figure>
-  <img src="/blog/202511/php-8.5-coming-soon/pipe-proposal-example.png" alt="">
-  <figcaption>이미 다른 사람이 유사한 문법의 무언가를 제안했을지도.</figcaption>
-</figure>
+![](/blog/202511/php-8.5-coming-soon/pipe-proposal-example.png)
+
+*이미 다른 사람이 유사한 문법의 무언가를 제안했을지도.*
 
 나는 위와 같은 새로운 문법을 제안하고 싶다. 물론 이러한 형태의 문법을 지원하려면 파이프 연산자 뿐 아니라, Closure 전반의 수정이 있어야 할 것이라 받아들여지기부터 쉽지 않을 것이고, 받아들여진다고 해도 오랜 시간이 걸리지 않을까 싶다.
 
@@ -37,9 +35,7 @@ PHP 8.5가 곧 출시된다. 아마도 몇시간 이내에, 늦어도 내일이�
 
 그러나 이젠 다르다. 객체를 `clone`할 때, 변경할 속성의 값을 같이 전달할 수 있도록 바뀌었다. 물론 `readonly` 속성도 마찬가지다. 이를 위해 먼저 키워드로 취급되었던 `clone`을 함수로 변경하고, 두번째 인자를 받도록 했다. 두번째 인자로는 변경할 속성 이름과 값의 맵 배열을 전달할 수 있다.
 
-<figure>
-  <img src="/blog/202511/php-8.5-coming-soon/clone-with-example.png" alt="">
-</figure>
+![](/blog/202511/php-8.5-coming-soon/clone-with-example.png)
 
 개인적으론 PHP의 문법 자체가 조금 더 다채로워졌으면 하는 바램이 있다. `clone($obj) { $this->a = 20; }` 같이 함수 콜 뒤에 `{}` 블럭이 시작되면 함수 마지막 파라미터에 해당 블럭의 내용을 Closure로 전달해준다던가. 이번 `clone` 뿐 아니라 여러 영역에서 더 표현력있게 사용할 수 있으리라 생각한다.
 
@@ -49,15 +45,11 @@ PHP 8.5가 곧 출시된다. 아마도 몇시간 이내에, 늦어도 내일이�
 
 물론 스태틱 속성 사용 자체를 자제하는게 제일이겠지만, 세상 살이가 뭐 그렇게 마음대로 돌아가는게 아니다. DI 컨테이너 없이 가볍게 구성하고 싶은 프로젝트도 수두룩 빽빽하다. 그럴 때마다 매번 고민이었던 점은 싱글톤 객체를 안전하게 보관하기 힘들다는 점이었다.
 
-<figure>
-  <img src="/blog/202511/php-8.5-coming-soon/singleton-example.png" alt="">
-</figure>
+![](/blog/202511/php-8.5-coming-soon/singleton-example.png)
 
 지금까지는 싱글톤 객체를 관리하기 위해 매번 이러한 코드를 작성하고, 객체를 가져올 때에도 `Singleton::getInstance()` 형태로 처리해야 했다. (물론 코드의 중복은 `trait`를 사용해 해결할 수 있다.) 크게 불편하지는 않지만, 프로퍼티 훅도 생긴 마당에 이런 불필요한 메서드를 유지하는 것은 참 아쉬운 부분이다.
 
-<figure>
-  <img src="/blog/202511/php-8.5-coming-soon/static-asymmetric-example.png" alt="">
-</figure>
+![](/blog/202511/php-8.5-coming-soon/static-asymmetric-example.png)
 
 그러나 이젠 `Singleton::$instance`를 개방해도 안전하게 처리할 수 있게 되었다. 아쉬운 점이라면 이번 업데이트는 비대칭 가시성을 설정하는 것에 그치기 때문에, `Singleton::init()`과 같이 `::$instance`를 초기화하는 절차가 필요하다는 것이다. 추후에는 스태틱 속성에서도 프로퍼티 훅을 사용할 수 있으면 좋겠다.
 
@@ -69,21 +61,15 @@ PHP 8.5가 곧 출시된다. 아마도 몇시간 이내에, 늦어도 내일이�
 
 개인적으로 제일 자주, 제일 많이 사용하지 않을까 싶은 기능이다. Closure이 상수 표현식으로 취급되면 가능해지는 것들이 아주 많다.
 
-<figure>
-  <img src="/blog/202511/php-8.5-coming-soon/closure-not-constant-example.png" alt="">
-</figure>
+![](/blog/202511/php-8.5-coming-soon/closure-not-constant-example.png)
 
 이전에는 Closure이 상수 표현식이 아니었기 때문에, 위와 같이 함수 파라미터의 기본값으로 전달할 수 없었다. 이를 처리하기 위해 `null` 타입을 허용하고, `null` 값을 기본값으로 설정한 뒤, 함수 내부에서 해당 값이 `null`인 경우 기본값을 Closure로 바꿔주는 코드가 필요했다. 코드가 장황해지고, 의도하지 않은 nullable 설정 등 아쉬운 점이 많았다.
 
-<figure>
-  <img src="/blog/202511/php-8.5-coming-soon/closure-in-default-value-example.png" alt="">
-</figure>
+![](/blog/202511/php-8.5-coming-soon/closure-in-default-value-example.png)
 
 그러나 이젠 Closure을 기본값으로 설정할 수 있게 되었다. 더 명확한 타입, 더 깔끔한 코드를 작성할 수 있고, IDE 또는 정적 도구가 분석하기도 더 용이해졌다.
 
-<figure>
-  <img src="/blog/202511/php-8.5-coming-soon/closure-in-constant.png" alt="">
-</figure>
+![](/blog/202511/php-8.5-coming-soon/closure-in-constant.png)
 
 함수 기본값 뿐 아니라 위 스크린샷처럼 여러 용도로 활용할 수 있다. Closure을 상수로 선언하여 `usort`에 사용할 프리셋 함수 등으로 선언할 수도 있고, 클래스 속성의 기본값에 Closure을 넣어줄 수도 있다. 최근 생겨난 Attribute의 인자값으로 전달할 수도 있다.
 

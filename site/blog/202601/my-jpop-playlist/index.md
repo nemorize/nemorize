@@ -49,14 +49,9 @@ Y2K 이전의 시티팝 감성도 참 매력적이지만, 역시 다채로운 �
   ありがとう - いきものがかり
 </h3>
 
-<figure>
-  <a href="https://www.youtube.com/watch?v=VZBU8LvZ91Q" target="_blank">
-    <img src="https://img.youtube.com/vi/VZBU8LvZ91Q/maxresdefault.jpg" alt="">
-  </a>
-  <figcaption style="margin-top: -4px">
-    https://www.youtube.com/watch?v=VZBU8LvZ91Q
-  </figcaption>
-</figure>
+<a href="https://www.youtube.com/watch?v=VZBU8LvZ91Q" target="_blank">![](https://img.youtube.com/vi/VZBU8LvZ91Q/maxresdefault.jpg)</a>
+
+*<https://www.youtube.com/watch?v=VZBU8LvZ91Q>*
 
 いきものがかり(이키모노가카리)는 색깔이 참 다양하다. 09년 데뷔곡인 <a href="https://www.youtube.com/watch?v=61z-cqg28R8" target="_blank"> SAKURA </a>, 3년 뒤의 <a href="https://www.youtube.com/watch?v=lz8frtP6_kk" target="_blank"> YELL </a>, 바로 다음 년도의 ありがとう(아리가또/고마워)까지. 초대박을 터뜨린 곡들 다수가 잔잔한 감성적인 노래지만, <a href="https://www.youtube.com/watch?v=5XCSt_0lwOE" target="_blank"> 気まぐれロマンティック(키마구루로맨틱/변덕스런로맨스) </a>, <a href="https://www.youtube.com/watch?v=viQPExRmxdk" target="_blank"> じょいふる(조이풀) </a>과 같이 업템포의 노래도 많다.
 
@@ -66,14 +61,9 @@ Y2K 이전의 시티팝 감성도 참 매력적이지만, 역시 다채로운 �
   全力少年 - スキマスイッチ
 </h3>
 
-<figure>
-  <a href="https://www.youtube.com/watch?v=IvDTkTKi5pA" target="_blank">
-    <img src="https://img.youtube.com/vi/IvDTkTKi5pA/maxresdefault.jpg" alt="">
-  </a>
-  <figcaption style="margin-top: -4px">
-    https://www.youtube.com/watch?v=IvDTkTKi5pA
-  </figcaption>
-</figure>
+<a href="https://www.youtube.com/watch?v=IvDTkTKi5pA" target="_blank">![](https://img.youtube.com/vi/IvDTkTKi5pA/maxresdefault.jpg)</a>
+
+*<https://www.youtube.com/watch?v=IvDTkTKi5pA>*
 
 スキマスイッチ(스키마스위치)의 全力少年(전력소년). スキマスイッチ 하면 보통 <a href="https://www.youtube.com/watch?v=J5Z7tIq7bco" target="_blank"> 奏(카나데/연주) </a>가 더 유명한데, 난 全力少年에 한표를 주고 싶다. 奏도 정말 좋은 노래지만, 사실 개인적으론 잘 공감되지 않더라.
 
@@ -109,14 +99,9 @@ Y2K 이전의 시티팝 감성도 참 매력적이지만, 역시 다채로운 �
   明日はきっといい日になる - 高橋優
 </h3>
 
-<figure>
-  <a href="https://www.youtube.com/watch?v=cpIa89_rZoA" target="_blank">
-    <img src="https://img.youtube.com/vi/cpIa89_rZoA/0.jpg" alt="">
-  </a>
-  <figcaption style="margin-top: -4px">
-    https://www.youtube.com/watch?v=cpIa89_rZoA
-  </figcaption>
-</figure>
+<a href="https://www.youtube.com/watch?v=cpIa89_rZoA" target="_blank">![](https://img.youtube.com/vi/cpIa89_rZoA/0.jpg)</a>
+
+*<https://www.youtube.com/watch?v=cpIa89_rZoA>*
 
 高橋優(타카하시 유우)의 신나는 明日はきっといい日になる(아시타와킷토이이히니나루/내일은 분명 좋은날이 될거야). 高橋優 노래는 이 곡을 제외하면 나랑 잘 안맞는 것 같다. 다른 유명한 곡들도 몇 곡 더 있지만, 내 귀엔 매력적이지 않더라. 그래도 이 곡 하나만큼은 완전 내 취향이다.
 
@@ -137,14 +122,9 @@ Y2K 이전의 시티팝 감성도 참 매력적이지만, 역시 다채로운 �
   ヒロイン - back number
 </h3>
 
-<figure>
-  <a href="https://www.youtube.com/watch?v=VPZK72W4Xxw" target="_blank">
-    <img src="https://img.youtube.com/vi/VPZK72W4Xxw/maxresdefault.jpg" alt="">
-  </a>
-  <figcaption style="margin-top: -4px">
-    https://www.youtube.com/watch?v=VPZK72W4Xxw
-  </figcaption>
-</figure>
+<a href="https://www.youtube.com/watch?v=VPZK72W4Xxw" target="_blank">![](https://img.youtube.com/vi/VPZK72W4Xxw/maxresdefault.jpg)</a>
+
+*<https://www.youtube.com/watch?v=VPZK72W4Xxw>*
 
 최근 성시경이 일본 예능 프로그램에서 불러 한국에서도 엄청나게 바이럴 된 back number의 ヒロイン(히로인). 말 할 것도 없이 back number 최고의 명곡이다. <a href="https://www.youtube.com/watch?v=7zBeQezaz4U" target="_blank">クリスマスソング(크리스마스송)</a>, <a href="https://www.youtube.com/watch?v=SII-S-zCg-c" target="_blank"> 高嶺の花子さん(타카네노하나코상/높은 산의 하나코 씨) </a>와 함께 back number를 겨울의 밴드로 불리게 한 곡이기도 하다.
 
@@ -154,14 +134,9 @@ back number 곡들 중에서도 ヒロイン과 같이 사랑을 주제로 하�
   3月9日 - レミオロメン
 </h3>
 
-<figure>
-  <a href="https://www.youtube.com/watch?v=UNRJyBHziX4" target="_blank">
-    <img src="https://img.youtube.com/vi/UNRJyBHziX4/0.jpg" alt="">
-  </a>
-  <figcaption style="margin-top: -4px">
-    https://www.youtube.com/watch?v=UNRJyBHziX4
-  </figcaption>
-</figure>
+<a href="https://www.youtube.com/watch?v=UNRJyBHziX4" target="_blank">![](https://img.youtube.com/vi/UNRJyBHziX4/0.jpg)</a>
+
+*<https://www.youtube.com/watch?v=UNRJyBHziX4>*
 
 후지TV 드라마 1リットルの涙(이치릿토루노나미다/1리터의 눈물)의 주제가로 사용되며 유명해진 レミオロメン(레미오로멘)의 노래다. 친구의 결혼 기념일을 축하하기 위해 만든 노래라고 한다. 나도 언젠가 결혼을 하게 되면, 와이프를 위해 이런 것들을 선물하게 되는걸까.
 
@@ -171,14 +146,9 @@ back number 곡들 중에서도 ヒロイン과 같이 사랑을 주제로 하�
   SWEET MEMORIES - 松田聖子
 </h3>
 
-<figure>
-  <a href="https://www.youtube.com/watch?v=9_tC9iVur5U" target="_blank">
-    <img src="https://img.youtube.com/vi/9_tC9iVur5U/maxresdefault.jpg" alt="">
-  </a>
-  <figcaption style="margin-top: -4px">
-    https://www.youtube.com/watch?v=9_tC9iVur5U
-  </figcaption>
-</figure>
+<a href="https://www.youtube.com/watch?v=9_tC9iVur5U" target="_blank">![](https://img.youtube.com/vi/9_tC9iVur5U/maxresdefault.jpg)</a>
+
+*<https://www.youtube.com/watch?v=9_tC9iVur5U>*
 
 일본의 영원한 아이돌, 松田聖子(마츠다 세이코)의 SWEET MEMORIES. 수십개 곡을 오리콘 차트 1위에 박아넣은 그녀의 곡들 중 단 2개만 고르라고 한다면, 나는 첫 곡으로는 SWEET MEMORIES, 두번째 곡으로는 <a href="https://www.youtube.com/watch?v=DVOgvzl395w" target="_blank">青い珊瑚礁(아오이산고쇼/푸른 산호초)</a>를 고를거다.
 
@@ -188,14 +158,9 @@ YOASOBI의 보컬으로 유명한 幾田りら(이쿠타 리라)가 커버한 �
   恋におちて - 小林明子
 </h3>
 
-<figure>
-  <a href="https://www.youtube.com/watch?v=ZjKWpVF9Q6E" target="_blank">
-    <img src="https://img.youtube.com/vi/ZjKWpVF9Q6E/maxresdefault.jpg" alt="">
-  </a>
-  <figcaption style="margin-top: -4px">
-    https://www.youtube.com/watch?v=ZjKWpVF9Q6E
-  </figcaption>
-</figure>
+<a href="https://www.youtube.com/watch?v=ZjKWpVF9Q6E" target="_blank">![](https://img.youtube.com/vi/ZjKWpVF9Q6E/maxresdefault.jpg)</a>
+
+*<https://www.youtube.com/watch?v=ZjKWpVF9Q6E>*
 
 小林明子(코바야시 아키코)의 데뷔곡으로 TBS 드라마 金曜日の妻たちへIII(킨요비노츠마타치에3/금요일의 부인들3)의 주제곡으로 사용됐다. 핵가족 시대의 불륜을 그리는 드라마에서 서정적인 OST라니, 참 묘하다.
 
@@ -213,14 +178,9 @@ YOASOBI의 보컬으로 유명한 幾田りら(이쿠타 리라)가 커버한 �
   FAIRYLAND - 流星P
 </h3>
 
-<figure>
-  <a href="https://www.nicovideo.jp/watch/sm2085031" target="_blank">
-    <img src="https://img.youtube.com/vi/SVCAv_YK04c/0.jpg" alt="">
-  </a>
-  <figcaption style="margin-top: -4px">
-    https://www.nicovideo.jp/watch/sm2085031
-  </figcaption>
-</figure>
+<a href="https://www.nicovideo.jp/watch/sm2085031" target="_blank">![](https://img.youtube.com/vi/SVCAv_YK04c/0.jpg)</a>
+
+*<https://www.nicovideo.jp/watch/sm2085031>*
 
 <a href="https://www.nicovideo.jp/watch/sm6909505" target="_blank">magnet</a>으로 유명한 流星P(유성P)의 노래다. 流星P는 변태적인 노래를 즐겨 쓰는 듯 하다. 많은 인기를 끈 magnet, SPICE!, RIP=RELEASE나 비교적 최근에 투고한 アンビバレンツ(앰비밸런트)까지. 꽤 노골적인 성적 묘사가 많다.
 
@@ -234,14 +194,9 @@ magnet의 PV를 만든 프로듀서 ゆのみP의 트레이싱 표절으로 인�
   doqrinqo - 由末イリ
 </h3>
 
-<figure>
-  <a href="https://www.youtube.com/watch?v=gbM8lm2U_Eo" target="_blank">
-    <img src="https://img.youtube.com/vi/gbM8lm2U_Eo/maxresdefault.jpg" alt="">
-  </a>
-  <figcaption style="margin-top: -4px">
-    https://www.youtube.com/watch?v=gbM8lm2U_Eo
-  </figcaption>
-</figure>
+<a href="https://www.youtube.com/watch?v=gbM8lm2U_Eo" target="_blank">![](https://img.youtube.com/vi/gbM8lm2U_Eo/maxresdefault.jpg)</a>
+
+*<https://www.youtube.com/watch?v=gbM8lm2U_Eo>*
 
 由末イリ(유우레 이리)가 투고한 doqrinqo. 잘 알려지지 않은 프로듀서라 19년도에 투고한 곡인데도 23년 즈음에나 처음 들어봤다. 묘하게 중독된다. 조교가 덜 된 보컬로이드 노래만의 매력이 잘 살아있다. 같은 프로듀서의 <a href="https://www.youtube.com/watch?v=LXK8060SCAI" target="_blank"> へるmp(hell mp) </a>, <a href="https://www.youtube.com/watch?v=GU_dixURbh8" target="_blank">11</a>도 들어보자. 시간이 흐를수록 퀄리티가 점점 올라가는게 따라가며 들을만한 매력이 충분하다.
 
@@ -249,14 +204,9 @@ magnet의 PV를 만든 프로듀서 ゆのみP의 트레이싱 표절으로 인�
   真夜中は崩れ落ちる - ふるがね
 </h3>
 
-<figure>
-  <a href="https://www.youtube.com/watch?v=Rx9sql-3mBo" target="_blank">
-    <img src="https://img.youtube.com/vi/Rx9sql-3mBo/maxresdefault.jpg" alt="">
-  </a>
-  <figcaption style="margin-top: -4px">
-    https://www.youtube.com/watch?v=Rx9sql-3mBo
-  </figcaption>
-</figure>
+<a href="https://www.youtube.com/watch?v=Rx9sql-3mBo" target="_blank">![](https://img.youtube.com/vi/Rx9sql-3mBo/maxresdefault.jpg)</a>
+
+*<https://www.youtube.com/watch?v=Rx9sql-3mBo>*
 
 ふるがね(후루카네)의 真夜中は崩れ落ちる(마요나카와쿠즈레오치루/심야는 무너져 내린다). 짧지만 귀엽고 달콤한 멜로디가 잘 때 틀어놓고 있기 정말 좋다. ふるがね는 신비로운 분위기를 잘 사용한다. 곡을 콕 찝어 링크하기 보다는 <a href="https://www.youtube.com/@furugane" target="_blank">유튜브 채널</a> 링크를 걸어두니 들어가서 취향에 맞는 곡들을 한 번 골라보자.
 

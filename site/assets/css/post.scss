@@ -116,11 +116,8 @@
       text-underline-offset: 4px;
     }
 
-    figure {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-
+    p:has(> img:only-child),
+    p:has(> a:only-child > img:only-child) {
       width: 100%;
       margin: 4px 0 16px;
 
@@ -131,11 +128,39 @@
         border-radius: 4px;
       }
 
-      figcaption {
+      > img {
+        display: block;
+      }
+
+      > a {
+        display: block;
+      }
+
+      &:has(+ p > em:only-child) {
+        margin-bottom: 6px;
+      }
+
+      + p:has(> em:only-child) {
+        margin: 0 0 16px;
         color: var(--low);
         font-size: 12px;
+
+        em {
+          font-style: normal;
+        }
+
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
       }
     }
+
+    p:has(> a:only-child > img:only-child):has(+ p > em:only-child) {
+      margin-bottom: 2px;
+    }
+
+
   }
 
 }

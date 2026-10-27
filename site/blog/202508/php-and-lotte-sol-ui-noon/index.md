@@ -9,12 +9,9 @@ reading_minutes: 3
 
 그에 비해 제로 칼로리 제품은 설탕이 적게 들어가서 그런가, 맛의 질감은 확 줄어들었지만 솔 향에 더 집중할 수 있게 됐다. 당뇨 환자라 어차피 당 섭취를 조심해야 하는데, 솔 향까지 더 잘 느끼게 해주니 럭키다.
 
-<figure>
-  <img src="/blog/202508/php-and-lotte-sol-ui-noon/sol-ui-noon-zero.jpg" alt="">
-  <figcaption>
-    출시 징조는 몇 달 전에 포착했으면서, 정작 출시 시점엔 전혀 모르고 있었던 나.
-  </figcaption>
-</figure>
+![](/blog/202508/php-and-lotte-sol-ui-noon/sol-ui-noon-zero.jpg)
+
+*출시 징조는 몇 달 전에 포착했으면서, 정작 출시 시점엔 전혀 모르고 있었던 나.*
 
 PHP는 솔의 눈과 유사한 점이 많다. 솔의 눈만 좋아하는 사람들은 "어디서 감히 솔의 눈님을 PHP 따위랑 묶어?"라 할거고, PHP만 좋아하는 사람들은 "어디서 감히 PHP님을 솔의 눈 따위랑 묶어?"라고 하겠지만...
 

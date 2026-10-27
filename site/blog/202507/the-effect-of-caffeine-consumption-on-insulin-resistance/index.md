@@ -11,10 +11,11 @@ search_keywords: "당뇨 야매의학 핫식스 몬스터 커피 카페인섭취
 
 나는 작년 여름 말 즈음 2형당뇨를 진단받았다. 식전 혈당 약 350mg/dl, 식후 혈당 550mg/dl 즈음의 20대 나이 치고는 꽤 심각한 수준의 혈당 수치였다. 다만 참 다행스럽게도, 진단 이후 약 2개월의 인슐린 처방과 3개월 간의 당뇨약 투여 이후 정상에 가까운 혈당을 유지하고 있다. 가끔 떡볶이를 먹어도, 치킨에 맥주를 먹어도, 그러면서도 귀찮아 당뇨약을 몇 번 빼먹은 상태에서도, 혈당이 150mg/dl 이상으로 넘어가지 않는 등 정말 많이 호전된 상태다.
 
-<figure>
+<p>
   <img src="/blog/202507/the-effect-of-caffeine-consumption-on-insulin-resistance/high-glucos-342.jpg" width="800" height="1066" alt="" style="width: 320px">
-  <figcaption>처음 이 수치 보고 곧 죽는건가 생각했음ㅋ; 나중에 알고보니 당뇨 환자들은 이 정도는 일반적(?)이라는 것 같지만.</figcaption>
-</figure>
+</p>
+
+*처음 이 수치 보고 곧 죽는건가 생각했음ㅋ; 나중에 알고보니 당뇨 환자들은 이 정도는 일반적(?)이라는 것 같지만.*
 
 사실 처음 진단받을 때부터 일반적인 상황과는 조금 달랐다. 작년 7월 즈음 즈음 당뇨를 앓고 있는 지인이 혈당측정을 권해 혈당을 측정했었다. 당시 공복 혈당은 120mg/dl이었다. 정상인에 비해서야 분명히 높은, 당뇨 위험군에 해당하는 수치이지만, 당뇨를 확신하는 수치인 126mg/dl를 넘지는 않는 수치다. 그런데 그로부터 3개월 뒤 병원에서 측정한 결과 350mg/dl이 나온 것이다.
 
@@ -38,10 +39,9 @@ search_keywords: "당뇨 야매의학 핫식스 몬스터 커피 카페인섭취
 
 몸의 피로가 쌓이면 뇌에서 아데노신을 생성한다. 아데노신은 아데노신 수용체와 결합하여 세포를 쉬게 하고, 잠을 자게 만든다. 카페인은 이러한 아데노신과 화학구조식이 매우 비슷하다. 그래서 카페인을 섭취하면 아데노신 대신 카페인이 아데노신 수용체와 결합해, 아데노신의 작용을 방해한다.
 
-<figure>
-  <img src="/blog/202507/the-effect-of-caffeine-consumption-on-insulin-resistance/caffeine-adenosine.png" width="897" height="621" alt="">
-  <figcaption>카페인과 아데노신의 화학구조식 - 출처: https://en.wikipedia.org/wiki/Adenosine</figcaption>
-</figure>
+![](/blog/202507/the-effect-of-caffeine-consumption-on-insulin-resistance/caffeine-adenosine.png)
+
+*카페인과 아데노신의 화학구조식 - 출처: https://en.wikipedia.org/wiki/Adenosine*
 
 ## 카페인과 인슐린의 상관관계
 
@@ -49,10 +49,9 @@ search_keywords: "당뇨 야매의학 핫식스 몬스터 커피 카페인섭취
 
 사람(동물)의 몸은 인체가 포도당을 필요로 할 때 분해해 활용하기 위해 글리코겐이라는 다당류를 만들어 세포질 속에 과립 형태로 저장한다. 인슐린은 인체의 포도당을 글리코겐으로 전환하고, 결과적으로 혈당을 감소시키는 효과를 보여준다. 그와 반대로 에피네프린은 저장된 글리코겐을 포도당으로 분해하는 작용을 촉진시킨다. 결과적으로 혈당을 높이는 효과를 보여준다. 카페인의 섭취는 곧 인슐린의 작용을 방해하고 혈당을 높이는 작용을 한다는 뜻이다.
 
-<figure>
-  <img src="/blog/202507/the-effect-of-caffeine-consumption-on-insulin-resistance/epinephrine-insulin.png" width="962" height="516" alt="">
-  <figcaption>참고로 에피네프린의 또다른 이름은 아드레날린이다.</figcaption>
-</figure>
+![](/blog/202507/the-effect-of-caffeine-consumption-on-insulin-resistance/epinephrine-insulin.png)
+
+*참고로 에피네프린의 또다른 이름은 아드레날린이다.*
 
 카페인의 또 다른 문제점도 있다. 카페인은 항이뇨호르몬의 작용을 방해하여 이뇨 작용을 촉진하고, 신체 내 수분 비율을 낮춘다. 몸에 수분이 줄어들면 혈액의 점도가 높아지고 혈당이 오른다.
 

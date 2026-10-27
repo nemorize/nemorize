@@ -19,7 +19,6 @@ permalink: "/blog/post-template.html"
 
 여러분이 항상 즐겁게 살아가기를 진심으로 응원합니다. 오늘도 귀여운 고양이를 보며 힘내봅시다!
 
-<figure>
-  <img src="/assets/images/post-template-cat.png" width="560" height="420" alt="">
-  <figcaption>귀엽죠ㅎㅎ</figcaption>
-</figure>
+![](/assets/images/post-template-cat.png)
+
+*귀엽죠ㅎㅎ*

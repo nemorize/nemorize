@@ -21,10 +21,11 @@ reading_minutes: 15
 
 크게 눈에 띄지는 않지만 여백을 줄이고, 원래 그 여백으로 구분하던 공간들 사이에 선을 하나 그었다. 아래 스크린샷은 약간의 화질 저하가 있다보니 선이 눈에 띄지 않아 아쉽다. 원본을 확인하자.
 
-<figure>
-  <img src="/blog/202507/blog-renewal/compact-size.png" alt="" width="1679" height="750" style="max-width: unset">
-  <figcaption>좌측이 기존 디자인, 우측이 새로운 디자인</figcaption>
-</figure>
+<p>
+  <img src="/blog/202507/blog-renewal/compact-size.png" width="1679" height="750" alt="" style="max-width: unset">
+</p>
+
+*좌측이 기존 디자인, 우측이 새로운 디자인*
 
 ### 메인 페이지
 

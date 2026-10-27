@@ -47,12 +47,9 @@ reading_minutes: 10
 
 안전모와 안전화 착용까지 모두 끝난 후, 나와 다른 교육 수강생들은 곧바로 현장에 투입되었다. 나는 첫 현장으로 하차직을 배정받았다. 하는 일은 단순하다. 차량에 선적된 택배 박스들을 하나씩 레일에 내리기만 하면 된다. 택배 송장이 위를 향하도록 올려야 한다던가, 상황이 된다면 택배 상자간 간격을 떨어뜨려야 한다던가, 몇몇 종류 또는 형태의 물건은 따로 빼 두어야 한다던가 하는 디테일한 요소들이 조금 있지만, 마찬가지로 어렵지 않다.
 
-<figure>
-  <img src="/blog/202511/2-weeks-of-box-loading-and-unloading/unloading-truck.png" alt="">
-  <figcaption>
-    사진 촬영이 불가하여 인터넷에 공개된 자료를 첨부했음. 출처: https://bbs.ruliweb.com/community/board/300779/read/46707183
-  </figcaption>
-</figure>
+![](/blog/202511/2-weeks-of-box-loading-and-unloading/unloading-truck.png)
+
+*사진 촬영이 불가하여 인터넷에 공개된 자료를 첨부했음. 출처: https://bbs.ruliweb.com/community/board/300779/read/46707183*
 
 19시 교육 시작 후 2시간 가량의 교육을 받은 뒤, 21시 즈음 현장에 투입되었고, 약 3시간의 근무 후 00시 식사 시간이 되었다. 몸을 쓰는 곳이라 그런지 탄수화물 비중이 꽤 높은 식단이 나왔다. 꽤 맛있었다. 내가 원래 이것 저것 잘 먹는 편이라 더 그렇게 느꼈는지는 모르겠지만. 뭐, 주는 밥 잘 챙겨먹고 핫식스 세 캔을 쭈욱 들이키고 다시 현장에 투입됐다.
 

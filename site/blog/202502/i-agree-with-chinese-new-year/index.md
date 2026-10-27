@@ -27,12 +27,9 @@ Lunar New Year에 동의하는 진영은 아래의 근거로 이에 동의한다
 
 또 시헌력이 청나라에서 만들어진 만큼, Chinese New Year이라는 번역이 정치적으로 올바르냐와는 무관하게 충분히 설득력있는 번역이라는 점을 반박하기 힘들다. 어쨌거나 중국=청나라에서 만들어진 것은 명백한 사실이니까. 동의-2 근거가 반박한다 볼 수 있지만, 동의-3을 인정해주면 동의-2는 이와 모순되는 근거로 보고 무시해도 되는 근거가 아닐까.
 
-<figure>
-  <img src="/blog/202502/i-agree-with-chinese-new-year/cheongs-lunisolar.png" width="475" height="238" alt="">
-  <figcaption>
-    인천 소남 윤동규의 종가에 보관된 시헌력서
-  </figcaption>
-</figure>
+![](/blog/202502/i-agree-with-chinese-new-year/cheongs-lunisolar.png)
+
+*인천 소남 윤동규의 종가에 보관된 시헌력서*
 
 ## 김치와 시헌력
 
@@ -44,12 +41,9 @@ Lunar New Year에 동의하는 진영은 아래의 근거로 이에 동의한다
 
 Chinese New Year도 마찬가지 아닌가? 중국의 시헌력을 기준으로 하는 태음태양력 새해를 기리는 것임이 명백한데, 심지어 이해당사자들과 무관한 서방에서 CNY를 LNY로 불러야 한다고 주장하기 시작했다. 이를테면 역-동북공정과 같은 상황이 아닐까.
 
-<figure>
-  <img src="/blog/202502/i-agree-with-chinese-new-year/english-chinese-replies.png" width="800" height="1564" alt="">
-  <figcaption>
-    CNY 대신 KNY를 사용한 대영박물관의 새해 인사에 대한 중국인들의 반응
-  </figcaption>
-</figure>
+![](/blog/202502/i-agree-with-chinese-new-year/english-chinese-replies.png)
+
+*CNY 대신 KNY를 사용한 대영박물관의 새해 인사에 대한 중국인들의 반응*
 
 ## 결론
 

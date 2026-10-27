@@ -19,12 +19,9 @@ JS/TS(이후 TS 생략) 진영의 사람들은 프론트와 백을 하나의 언
 
 이런 JS에 대한 여러 기대감이 흐르는 시장 속에서 PHP는 특출난 장점을 만들어 내지 못하고 있다. 프론트엔드에서 바로 사용할 수 있는 타입을 내보내지도 못하고, JS만큼 자유로운 표현을 기대하지도 못하며, 서버리스 함수 플랫폼에서 PHP를 사용하려면 PHP 런타임이 포함된 컨테이너를 만들어 사용하거나, babel을 통해 JS로 변경해 사용해야 하는 등의 불편함을 감수해야 한다.
 
-<figure>
-  <img src="/blog/202501/why-i-use-php-almost-everywhere/cloudflare-workers-php.png" width="899" height="368" alt="">
-  <figcaption>
-    Cloudflare Workers에서 PHP를 사용하기 위한 뻘짓 - https://github.com/cloudflare/php-worker-hello-world
-  </figcaption>
-</figure>
+![](/blog/202501/why-i-use-php-almost-everywhere/cloudflare-workers-php.png)
+
+*Cloudflare Workers에서 PHP를 사용하기 위한 뻘짓 - https://github.com/cloudflare/php-worker-hello-world*
 
 ## 모놀리식과 마이크로 서비스
 
@@ -40,12 +37,9 @@ PHP를 평가절하하는 제일 큰 이유는 "보안"이다. GET, POST를 전�
 
 이제는 충분히 해결되었다 볼 수 있는 보안 문제를 제외하고서도, PHP에는 고질적인 문제가 존재한다. 아직까지 PHP를 사용하는 사람들도 대책이 있다고 반론할지언정 완전히 부정하는 것은 불가능한, 아주 안타까운 문제다.
 
-<figure>
-  <img src="/blog/202501/why-i-use-php-almost-everywhere/php-explode.png" width="671" height="217" alt="">
-  <figcaption>
-    아주 유명한 짤이다.
-  </figcaption>
-</figure>
+![](/blog/202501/why-i-use-php-almost-everywhere/php-explode.png)
+
+*아주 유명한 짤이다.*
 
 이미 유명해질대로 유명해져 PHP에 관심이 전혀 없는 개발자들도 봤을법한 <code>explode()</code><code>implode()</code>는 PHP 개발자들의 발작 버튼이다. `array_*` 함수들의 시그니처도 대단하다. <code>array_filter(array, callable)</code><code>array_find(array, callable)</code> 등 대다수의 함수는 배열이 앞에 오지만 `array_map(callable, array)` 의 경우 배열이 뒤로 간다. 물론 그들만의 이유가 존재하기는 한다. "이러이러한 기능을 구현하려면 이러이러한 형태여야 했어요" 라고 주장하고, 그 이유라면 어느정도 이해는 간다. 애초에 그 기능이 꼭 필요했는가를 논외로 했을 때.
 
@@ -63,12 +57,9 @@ PHP의 태생은 라스무스 러도프가 C로 작성하기 귀찮아서 그때
 
 지금까지 다들 알고 있는 PHP의 단점들만 나열했다. 이렇게 나열하고 보니 지금까지 PHP를 쓰고 있는 내가 참 미련해 보인다. 스캇 마니아라는 멸칭이 붙어도 반박하지 못할 것 같다.
 
-<figure>
-  <img src="/blog/202501/why-i-use-php-almost-everywhere/poop.png" width="480" height="320" alt="">
-  <figcaption>
-    Portuguese Gravity on Unsplash - https://unsplash.com/@portuguesegravity
-  </figcaption>
-</figure>
+![](/blog/202501/why-i-use-php-almost-everywhere/poop.png)
+
+*Portuguese Gravity on Unsplash - https://unsplash.com/@portuguesegravity*
 
 나는 개인적인 프로젝트부터 업무를 위한 프로젝트까지, 내가 기술 스택을 선택할 권한이 있는 프로젝트에서는 시기 불문 거의 모두 PHP를 사용했다. 초등학교를 다니던 시기에는 간단한 웹사이트를 제작했고, 중학교를 다니던 시기에는 PHP로 게임서버를 만들어 대회에 참가해 수상하기도 했다. PHP를 사용해 임베디드 기기를 제어하는 클라이언트를 만들기도 했다. 고등학생이 되어서는 Git 클라이언트나 앱 빌드 서버와 같은 것들을 PHP로 만들어 얼마 되지 않지만 실제로 금전적인 이득을 보기도 했다.
 
@@ -110,12 +101,9 @@ PHP를 사용하면 서버리스 함수를 만들어 사용하기 위해 특정 
 
 나는 라스무스 러도프가 그러하듯 프로그래밍을 좋아하지 않는다. 이 블로그의 메인 페이지에서 볼 수 있듯 나는 "문제를 해결하는 것" 그 자체를 좋아하지, "프로그래밍으로" 문제 풀기를 좋아하거나, 깔끔하고 멋있는 설계를 기반으로 기술적으로 대단한 프로그램을 작성하는 것을 좋아하는 것이 아니다. 오히려 싫어하는 편이다.
 
-<figure>
-  <img src="/blog/202501/why-i-use-php-almost-everywhere/rasmus-lerdorf.png" width="560" height="560" alt="">
-  <figcaption>
-    나는 라스무스 러도프만큼 위대하지 않지만, 라스무스 러도프만큼 프로그래밍을 싫어한다.
-  </figcaption>
-</figure>
+![](/blog/202501/why-i-use-php-almost-everywhere/rasmus-lerdorf.png)
+
+*나는 라스무스 러도프만큼 위대하지 않지만, 라스무스 러도프만큼 프로그래밍을 싫어한다.*
 
 나는 20살에 30만원짜리 PC만을 가지고 1인 사업을 시작해 만족할만한 수익을 달성하기까지의 4년간 어떠한 인건비도 지출하지 않았다. 기획, 디자인, 개발, 마케팅, 행정, 세무 업무까지 모두 혼자서 처리했다. 물론 그 이후로는 내 손을 타지 않아도 괜찮은 코드, 디자인, 행사 등에 한해 외주를 주거나 단기간 고용하여 처리한다.
 
