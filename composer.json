@@ -3,18 +3,9 @@
     "description": "nemorize.me blog, built with Hanji, Blade and Markdown.",
     "type": "project",
     "license": "proprietary",
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../hanji",
-            "options": {
-                "symlink": true
-            }
-        }
-    ],
     "require": {
         "php": "^8.5",
-        "nemorize/hanji": "dev-main",
+        "nemorize/hanji": "^0.1.0",
         "scssphp/scssphp": "^2.1"
     },
     "config": {
@@ -23,8 +14,8 @@
         "sort-packages": true
     },
     "scripts": {
-        "build": "php bin/hanji build",
-        "serve": "php bin/hanji serve",
-        "clean": "php bin/hanji clean"
+        "build": "@php vendor/bin/hanji build",
+        "serve": "@php vendor/bin/hanji serve",
+        "clean": "@php vendor/bin/hanji clean"
     }
 }

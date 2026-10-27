@@ -18,14 +18,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    defaults:
-      run:
-        working-directory: nemorize
     steps:
       - name: Checkout blog
         uses: actions/checkout@v7
         with:
-          path: nemorize
           persist-credentials: false
 
       - name: Set up PHP
@@ -34,35 +30,6 @@ jobs:
           php-version: '8.5'
           tools: composer:v2
           coverage: none
-
-      - name: Read locked Hanji revision
-        id: hanji
-        run: |
-          hanji_revision="$(php -r '
-            $lock = json_decode(file_get_contents("composer.lock"), true, flags: JSON_THROW_ON_ERROR);
-            foreach ($lock["packages"] as $package) {
-              if ($package["name"] === "nemorize/hanji") {
-                $revision = $package["dist"]["reference"] ?? "";
-                if (preg_match("/^[a-f0-9]{40}$/D", $revision) !== 1) {
-                  fwrite(STDERR, "Hanji must be locked to a Git commit.\n");
-                  exit(1);
-                }
-                echo $revision;
-                exit;
-              }
-            }
-            fwrite(STDERR, "Hanji is missing from composer.lock.\n");
-            exit(1);
-          ')"
-          printf 'ref=%s\n' "$hanji_revision" >> "$GITHUB_OUTPUT"
-
-      - name: Checkout Hanji
-        uses: actions/checkout@v7
-        with:
-          repository: nemorize/hanji
-          ref: ${{ steps.hanji.outputs.ref }}
-          path: hanji
-          persist-credentials: false
 
       - name: Validate Composer files
         run: composer validate --strict
@@ -80,7 +47,7 @@ jobs:
         if: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/main' }}
         uses: actions/upload-pages-artifact@v5
         with:
-          path: nemorize/_site
+          path: _site
           include-hidden-files: true
 
   deploy:
