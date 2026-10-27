@@ -37,10 +37,29 @@
       <h2>새로운 내용</h2>
 
       <h3>게시글</h3>
-      @include('partials.recent-posts')
+      @php
+          $posts = array_values(array_filter($collections['posts'] ?? [], static fn ($post) => !($post->data['draft'] ?? false)));
+      @endphp
+      <ul>
+        @foreach (array_slice($posts, 0, 5) as $post)
+          <li>
+            <a href="{{ rtrim($post->url, '/') }}">
+              {{ $post->data['title'] }} <time>— {{ $post->date->setTimezone(new \DateTimeZone($site['timezone']))->format('Y년 m월 d일 H시 i분') }}</time>
+            </a>
+          </li>
+        @endforeach
+      </ul>
 
       <h3>짧은글</h3>
-      @include('partials.recent-notes')
+      <ul>
+        @foreach (array_slice(\Hanji::meta('notes'), 0, 3) as $note)
+          <li>
+            <a href="{{ $hanji->url($note['url']) }}">
+              {{ $note['excerpt'] }} <time>— {{ $note['date']->format('Y년 m월 d일') }}</time>
+            </a>
+          </li>
+        @endforeach
+      </ul>
 
       <h3>구독과 좋아요</h3>
       <p>
