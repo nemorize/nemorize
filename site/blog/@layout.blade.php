@@ -18,10 +18,6 @@
     <article class="post__body">
       {{ \Hanji::children() }}
     </article>
-
-    @if (\Hanji::meta('updates_view'))
-      @include(\Hanji::meta('updates_view'))
-    @endif
   </div>
 </main>
 @else
