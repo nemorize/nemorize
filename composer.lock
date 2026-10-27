@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d344c922e8f48cc0ac532247ab70e63d",
+    "content-hash": "9bd30059fa3a8909b4afc0e8e86f33bf",
     "packages": [
         {
             "name": "amphp/amp",
@@ -2620,11 +2620,17 @@
         },
         {
             "name": "nemorize/hanji",
-            "version": "dev-main",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nemorize/hanji.git",
+                "reference": "9b192e1d9d0760e6ecedb8c69514a69ff6b6f606"
+            },
             "dist": {
-                "type": "path",
-                "url": "../hanji",
-                "reference": "d1d130d7addfafb7438e70bb3e17295068b508cc"
+                "type": "zip",
+                "url": "https://api.github.com/repos/nemorize/hanji/zipball/9b192e1d9d0760e6ecedb8c69514a69ff6b6f606",
+                "reference": "9b192e1d9d0760e6ecedb8c69514a69ff6b6f606",
+                "shasum": ""
             },
             "require": {
                 "amphp/http-server": "^3.4",
@@ -2658,49 +2664,30 @@
             ],
             "type": "library",
             "autoload": {
-                "classmap": [
-                    "src/Hanji.php"
-                ],
                 "psr-4": {
                     "Hanji\\": "src/"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Hanji\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "validate:composer": [
-                    "@composer validate --strict"
-                ],
-                "analyse": [
-                    "phpstan analyse --no-progress"
-                ],
-                "format": [
-                    "php-cs-fixer fix"
-                ],
-                "format:check": [
-                    "php-cs-fixer fix --dry-run --diff"
-                ],
-                "test": [
-                    "phpunit"
-                ],
-                "check": [
-                    "@validate:composer",
-                    "@format:check",
-                    "@analyse",
-                    "@test"
+                },
+                "classmap": [
+                    "src/Hanji.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
             "description": "A lightweight static site generator for PHP.",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "homepage": "https://github.com/nemorize/hanji",
+            "keywords": [
+                "blade",
+                "markdown",
+                "php",
+                "static-site-generator"
+            ],
+            "support": {
+                "issues": "https://github.com/nemorize/hanji/issues",
+                "source": "https://github.com/nemorize/hanji"
+            },
+            "time": "2026-10-27T13:51:20+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -5204,9 +5191,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "nemorize/hanji": 20
-    },
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
