@@ -10,12 +10,6 @@
     "url": "/blog"
   },
   {
-    "key": "images",
-    "label": "사진첩",
-    "url": "/images",
-    "photosOnly": true
-  },
-  {
     "key": "notes",
     "label": "짧은글",
     "url": "/notes"
