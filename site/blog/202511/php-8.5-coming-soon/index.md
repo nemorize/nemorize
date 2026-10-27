@@ -3,8 +3,6 @@ title: "PHP 8.5가 곧 출시된다"
 date: "2025-11-20T03:16:00+09:00"
 labels: ["프로그래밍", "PHP"]
 reading_minutes: 7
-permalink: "/blog/202511/php-8.5-coming-soon/"
-search_keywords: "프로그래밍 php php 8.5가 곧 출시된다"
 ---
 
 PHP 8.5가 곧 출시된다. 아마도 몇시간 이내에, 늦어도 내일이면.

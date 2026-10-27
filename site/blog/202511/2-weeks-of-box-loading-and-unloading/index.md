@@ -3,8 +3,6 @@ title: "2주간의 택배 상하차 아르바이트 후기"
 date: "2025-11-17T02:20:00+09:00"
 labels: ["라이프", "아르바이트", "다이어트"]
 reading_minutes: 10
-permalink: "/blog/202511/2-weeks-of-box-loading-and-unloading/"
-search_keywords: "라이프 아르바이트 다이어트 2주간의 택배 상하차 아르바이트 후기"
 ---
 
 11월 22일 사촌 형의 결혼식이 있다. 평소 운동 한번 하지 않아 살이 뒤룩뒤룩 쪄오른 돼지는 급하게 살을 빼야 할 상황이 되었다.

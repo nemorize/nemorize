@@ -3,8 +3,6 @@ title: "블로그를 뭔가 이상하게 리뉴얼했다"
 date: "2025-07-19T13:24:00+09:00"
 labels: ["프로그래밍", "디자인", "블로그"]
 reading_minutes: 15
-permalink: "/blog/202507/blog-renewal/"
-search_keywords: "프로그래밍 디자인 블로그 리뉴얼 자바스크립트 css 깃허브 github 클라우드플레어 cloudflare 블로그를뭔가이상하게리뉴얼했다"
 updates_view: "updates.blog-renewal"
 ---
 

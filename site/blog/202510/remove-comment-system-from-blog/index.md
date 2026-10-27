@@ -3,8 +3,6 @@ title: "블로그에서 댓글 기능을 삭제했다, 그리고 약간의 잡�
 date: "2025-10-06T03:50:00+09:00"
 labels: ["프로그래밍", "블로그"]
 reading_minutes: 3
-permalink: "/blog/202510/remove-comment-system-from-blog/"
-search_keywords: "프로그래밍 블로그 블로그에서 댓글 기능을 삭제했다, 그리고 약간의 잡설."
 ---
 
 No-JS 블로그를 작성하며 야심차게 준비했던 댓글 기능을 삭제했다.

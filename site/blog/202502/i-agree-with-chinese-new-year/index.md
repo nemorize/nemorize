@@ -3,8 +3,6 @@ title: "나는 Lunar New Year보다는 CNY에 동의한다"
 date: "2025-02-04T00:32:00+09:00"
 labels: ["문화"]
 reading_minutes: 3
-permalink: "/blog/202502/i-agree-with-chinese-new-year/"
-search_keywords: "문화 설날 중국 청나라 나는lunarnewyear보다는cny에동의한다"
 ---
 
 며칠 전이 설날이었다. 여러 커뮤니티에서 Chinese New Year을 사용하는 외국인들에게 반감을 가지고, Lunar New Year을 사용해야 한다는 주장이 많이 올라왔다. 감정적으로 공감하지 못하는 바는 아니지만, 그럼에도 나는 CNY가 조금 더 적절한 번역이라고 생각하는 편이다. 이 글에서는 내가 그렇게 생각하는 이유를 살짝 풀어보려고 한다.

@@ -3,8 +3,6 @@ title: "PHP 해주세요!"
 date: "2025-02-14T11:46:00+09:00"
 labels: ["프로그래밍", "PHP", "만화"]
 reading_minutes: 0
-permalink: "/blog/202502/php-please/"
-search_keywords: "프로그래밍 php 만화 채용 php해주세요"
 ---
 
 <figure>

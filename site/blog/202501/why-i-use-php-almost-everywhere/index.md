@@ -3,8 +3,6 @@ title: "내가 (거의) 모든 곳에 PHP를 사용하는 이유"
 date: "2025-01-10T18:36:00+09:00"
 labels: ["프로그래밍", "PHP"]
 reading_minutes: 11
-permalink: "/blog/202501/why-i-use-php-almost-everywhere/"
-search_keywords: "프로그래밍 php 내가거의모든곳에php를사용하는이유"
 ---
 
 나는 PHP를 오래 전부터(4.0) 지금까지 계속 사용해오고 있다. 1~3버전을 기억하던 선배님들은 하룻강아지로 보겠지만, 요즘같은 세상에 PHP를 십수년간 사용했으면 오래 사용했다고 생각한다.

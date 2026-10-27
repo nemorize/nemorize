@@ -3,8 +3,6 @@ title: "나의 제이팝 플레이리스트"
 date: "2026-01-15T03:35:00+09:00"
 labels: ["음악", "일본"]
 reading_minutes: 10
-permalink: "/blog/202601/my-jpop-playlist/"
-search_keywords: "음악 일본 나의 제이팝 플레이리스트"
 styles: ["/assets/css/post.css"]
 ---
 
